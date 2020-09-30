@@ -1,7 +1,7 @@
 {
-  "name": "matching-halloween",
+  "name": "esl-ology-homepage",
   "version": "1.0.0",
-  "description": "a game of halloween pelmanism",
+  "description": "the homepage of esl-ology-com",
   "main": "script.js",
   "devDependencies": {
     "autoprefixer": "^9.8.0",

@@ -9,7 +9,7 @@ $color-light-grey: #eaeaea;
 $color-old-light-blue: #335fff;
 $color-orange: #f6653c;
 $color-orange-dark: #dd5b36;
-$color-yellow: #ffe164;
+$color-yellow: #f8e38c;
 
 $color-white: #fff;
 $color-black: #000;
@@ -27,7 +27,7 @@ $default-font-size: 1.6rem;
 
 //BOX SHADOWS
 $box-shadow-small: 1px 1px 2px 2px rgba(0,0,0,0.1);
-$box-shadow-large: 3px 3px 3px rgba(0,0,0,0.4);
+$box-shadow-large: 3px 3px 3px 2px rgba(0,0,0,0.4);
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px

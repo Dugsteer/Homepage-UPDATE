@@ -35,7 +35,7 @@ body {
   margin: 0;
   height: auto;
   overflow-x: hidden;
-  background-color: #e0e2e1; }
+  background-color: #eaeaea; }
 
 @media print {
   .container {
@@ -160,9 +160,13 @@ imgBg.smaller {
       font-size: 1rem; } }
 
 .loader-div {
-  background-color: #594f73;
+  background-color: #368cbf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  height: 220vh;
+  height: 100vh;
   width: 1200px;
   margin: auto;
   top: 0;
@@ -173,6 +177,9 @@ imgBg.smaller {
   @media only screen and (max-width: 75em) {
     .loader-div {
       width: 100vw; } }
+  @media only screen and (max-width: 30em) {
+    .loader-div {
+      width: 140vw; } }
 
 .stop {
   animation: 2s opaque forwards; }
@@ -186,11 +193,11 @@ imgBg.smaller {
     z-index: -1; } }
 
 .loader-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -64.5px;
-  margin-top: -85.5px; }
+  width: 300px;
+  height: 340px; }
+  .loader-container img {
+    height: 100%;
+    width: 100%; }
 
 .ghost {
   animation: float 3s ease-out infinite; }
@@ -201,7 +208,8 @@ imgBg.smaller {
 
 .shadowFrame {
   width: 130px;
-  margin-top: 15px; }
+  margin: auto;
+  margin-top: 25px; }
 
 .shadow {
   animation: shrink 3s ease-out infinite;
@@ -339,15 +347,14 @@ imgBg.smaller {
   margin-right: 3rem; }
 
 .nav-bar {
-  background-color: #120437;
-  color: #e8e4c9;
+  background-color: #368cbf;
+  color: #fff;
   display: grid;
   height: 7rem;
   width: 1200px;
   margin: auto;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-  border: 1px solid #120437;
-  border-bottom: 1px solid #fff;
+  overflow: none;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   grid-template-columns: 3% 7% 15% 50% 25%;
   z-index: 5; }
   @media only screen and (max-width: 75em) {
@@ -383,7 +390,7 @@ imgBg.smaller {
       .nav-bar__title {
         font-size: 1rem; } }
     .nav-bar__title:hover {
-      color: #F75F1C; }
+      color: #f8e38c; }
     .nav-bar__title-page {
       display: flex;
       justify-content: space-between;
@@ -409,26 +416,26 @@ imgBg.smaller {
     width: 4rem;
     margin-left: 2rem;
     justify-self: center;
-    fill: #e8e4c9; }
+    fill: #fff; }
     .nav-bar__logo-img:hover {
-      fill: #F75F1C; }
+      fill: #f8e38c; }
   .nav-bar__links {
     display: flex;
     justify-content: space-evenly; }
   .nav-bar__link {
     font-size: 1.4rem;
     align-self: center;
-    color: #e8e4c9;
+    color: #fff;
     font-family: Montserrat, sans-serif;
     text-decoration: none; }
     .nav-bar__link:hover {
-      color: #ffe164; }
+      color: #f8e38c; }
     @media only screen and (max-width: 50em) {
       .nav-bar__link.link2, .nav-bar__link.link3 {
         display: none; } }
 
 .menu {
-  fill: #e8e4c9;
+  fill: #fff;
   align-self: center;
   cursor: pointer;
   display: none; }
@@ -436,21 +443,23 @@ imgBg.smaller {
     .menu {
       display: block; } }
   .menu:hover {
-    fill: #F75F1C; }
+    fill: #7ebc59; }
 
 .introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-row: 1/2;
   grid-column: 2/3;
-  width: 700px;
+  width: 800px;
   height: 600px;
-  background-color: #e8e4c9;
-  justify-self: center;
+  background-color: #fff;
   align-self: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
   margin: 4rem 0;
   padding: 1rem 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-radius: 5px;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 62.5em) {
     .introduction {
@@ -462,30 +471,35 @@ imgBg.smaller {
       height: 550px; } }
   @media only screen and (max-width: 37.5em) {
     .introduction {
-      justify-content: center;
+      grid-template-columns: 1fr;
       width: 450px;
-      height: 420px;
+      height: 360px;
       text-align: center; } }
   @media only screen and (max-width: 30em) {
     .introduction {
       justify-content: center;
-      width: 350px;
+      width: 420px;
       height: 450px; } }
   .introduction__img {
-    width: 180px;
-    height: 450px;
-    background-color: #F75F1C;
+    grid-column: 1/2;
+    width: 350px;
+    height: 400px;
+    background-color: #368cbf;
     padding: 20px;
     align-self: center;
     justify-self: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 62.5em) {
       .introduction__img {
-        width: 180px;
-        height: 450px; } }
+        width: 307px;
+        height: 350px; } }
+    @media only screen and (max-width: 62.5em) {
+      .introduction__img {
+        width: 263px;
+        height: 300px; } }
     @media only screen and (max-width: 37.5em) {
       .introduction__img {
         display: none; } }
@@ -493,7 +507,7 @@ imgBg.smaller {
       width: 100%;
       height: 100%; }
   .introduction__text {
-    width: 60%; }
+    width: 80%; }
     @media only screen and (max-width: 37.5em) {
       .introduction__text {
         width: 90%; } }
@@ -503,8 +517,10 @@ imgBg.smaller {
     margin-bottom: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .introduction__text p {
-        font-size: 1.6rem;
-        line-height: 2.2rem; } }
+        font-size: 2.4rem;
+        line-height: 3rem; } }
+  .introduction__text h1 {
+    color: #368cbf; }
   .introduction__choices {
     display: flex;
     align-items: center;
@@ -520,7 +536,7 @@ imgBg.smaller {
     color: #e8e4c9;
     text-transform: uppercase;
     border: none;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .introduction__set {
         padding: 0 1rem; } }
@@ -535,12 +551,12 @@ imgBg.smaller {
 
 .wrapper {
   width: 1200px;
+  position: relative;
   border: 0.5px solid #120437;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   display: grid;
   align-items: center;
-  background-image: url("/img/halloween-bg.jpg");
-  background-size: cover;
+  background-color: #d0eaf8;
   margin: 0 auto;
   grid-template-rows: auto auto auto;
   grid-template-columns: 23rem 1fr; }
@@ -557,330 +573,88 @@ imgBg.smaller {
     .wrapper {
       width: 140vw; } }
 
-.container {
+.imagediv {
+  position: absolute;
+  width: 280px;
+  height: 190px;
+  z-index: 10;
+  top: 50px;
+  left: 255px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+  transform: rotate(-20deg); }
+  .imagediv img {
+    width: 100%;
+    height: 100%; }
+  @media only screen and (max-width: 50em) {
+    .imagediv {
+      display: none; } }
+
+.content {
   display: grid;
   grid-row: 2/3;
   grid-column: 2/3;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  grid-template-rows: 480px 480px 480px;
-  grid-template-columns: 480px 480px; }
+  grid-template-rows: 500px 480px 480px;
+  grid-template-columns: 470px 470px; }
   @media only screen and (max-width: 62.5em) {
-    .container {
+    .content {
       grid-template-columns: 450px;
       grid-template-rows: repeat(6, 480px); } }
 
-.card-class {
-  width: 450px;
-  height: 450px; }
-
-#bingoCard, #bingoCard1, #bingoCard2, #bingoCard3, #bingoCard4, #bingoCard5 {
-  display: grid;
-  align-self: center;
-  justify-self: center;
-  grid-template-columns: 30px 97px 97px 97px 97px 30px;
-  grid-template-rows: 140px 93px 93px 94px 28px;
-  width: 450px;
+.content-4, .content-5, .content-6, .content-7, .content-8, .content-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  width: 430px;
   height: 450px;
-  z-index: 10; }
-  #bingoCard #id1, #bingoCard #id2, #bingoCard #id3, #bingoCard #id4, #bingoCard #id5, #bingoCard #id6, #bingoCard #id7, #bingoCard #id8, #bingoCard #id9, #bingoCard #id10, #bingoCard #id11, #bingoCard #id12,
-  #bingoCard #id13, #bingoCard #id14, #bingoCard #id15, #bingoCard #id16, #bingoCard #id17, #bingoCard #id18, #bingoCard #id19, #bingoCard #id20, #bingoCard #id21, #bingoCard #id22, #bingoCard #id23, #bingoCard #id24,
-  #bingoCard #id25, #bingoCard #id26, #bingoCard #id27, #bingoCard #id28, #bingoCard #id29, #bingoCard #id30, #bingoCard #id31, #bingoCard #id32, #bingoCard #id33, #bingoCard #id34, #bingoCard #id35, #bingoCard #id36,
-  #bingoCard #id37, #bingoCard #id38, #bingoCard #id39, #bingoCard #id40, #bingoCard #id41, #bingoCard #id42, #bingoCard #id43, #bingoCard #id44, #bingoCard #id45, #bingoCard #id46, #bingoCard #id47, #bingoCard #id48,
-  #bingoCard #id49, #bingoCard #id50, #bingoCard #id51, #bingoCard #id52, #bingoCard #id53, #bingoCard #id54, #bingoCard #id55, #bingoCard #id56, #bingoCard #id57, #bingoCard #id58, #bingoCard #id59, #bingoCard #id60,
-  #bingoCard #id61, #bingoCard #id62, #bingoCard #id63, #bingoCard #id64, #bingoCard #id65, #bingoCard #id66, #bingoCard #id67, #bingoCard #id68, #bingoCard #id69, #bingoCard #id70, #bingoCard #id71, #bingoCard #id72, #bingoCard1 #id1, #bingoCard1 #id2, #bingoCard1 #id3, #bingoCard1 #id4, #bingoCard1 #id5, #bingoCard1 #id6, #bingoCard1 #id7, #bingoCard1 #id8, #bingoCard1 #id9, #bingoCard1 #id10, #bingoCard1 #id11, #bingoCard1 #id12,
-  #bingoCard1 #id13, #bingoCard1 #id14, #bingoCard1 #id15, #bingoCard1 #id16, #bingoCard1 #id17, #bingoCard1 #id18, #bingoCard1 #id19, #bingoCard1 #id20, #bingoCard1 #id21, #bingoCard1 #id22, #bingoCard1 #id23, #bingoCard1 #id24,
-  #bingoCard1 #id25, #bingoCard1 #id26, #bingoCard1 #id27, #bingoCard1 #id28, #bingoCard1 #id29, #bingoCard1 #id30, #bingoCard1 #id31, #bingoCard1 #id32, #bingoCard1 #id33, #bingoCard1 #id34, #bingoCard1 #id35, #bingoCard1 #id36,
-  #bingoCard1 #id37, #bingoCard1 #id38, #bingoCard1 #id39, #bingoCard1 #id40, #bingoCard1 #id41, #bingoCard1 #id42, #bingoCard1 #id43, #bingoCard1 #id44, #bingoCard1 #id45, #bingoCard1 #id46, #bingoCard1 #id47, #bingoCard1 #id48,
-  #bingoCard1 #id49, #bingoCard1 #id50, #bingoCard1 #id51, #bingoCard1 #id52, #bingoCard1 #id53, #bingoCard1 #id54, #bingoCard1 #id55, #bingoCard1 #id56, #bingoCard1 #id57, #bingoCard1 #id58, #bingoCard1 #id59, #bingoCard1 #id60,
-  #bingoCard1 #id61, #bingoCard1 #id62, #bingoCard1 #id63, #bingoCard1 #id64, #bingoCard1 #id65, #bingoCard1 #id66, #bingoCard1 #id67, #bingoCard1 #id68, #bingoCard1 #id69, #bingoCard1 #id70, #bingoCard1 #id71, #bingoCard1 #id72, #bingoCard2 #id1, #bingoCard2 #id2, #bingoCard2 #id3, #bingoCard2 #id4, #bingoCard2 #id5, #bingoCard2 #id6, #bingoCard2 #id7, #bingoCard2 #id8, #bingoCard2 #id9, #bingoCard2 #id10, #bingoCard2 #id11, #bingoCard2 #id12,
-  #bingoCard2 #id13, #bingoCard2 #id14, #bingoCard2 #id15, #bingoCard2 #id16, #bingoCard2 #id17, #bingoCard2 #id18, #bingoCard2 #id19, #bingoCard2 #id20, #bingoCard2 #id21, #bingoCard2 #id22, #bingoCard2 #id23, #bingoCard2 #id24,
-  #bingoCard2 #id25, #bingoCard2 #id26, #bingoCard2 #id27, #bingoCard2 #id28, #bingoCard2 #id29, #bingoCard2 #id30, #bingoCard2 #id31, #bingoCard2 #id32, #bingoCard2 #id33, #bingoCard2 #id34, #bingoCard2 #id35, #bingoCard2 #id36,
-  #bingoCard2 #id37, #bingoCard2 #id38, #bingoCard2 #id39, #bingoCard2 #id40, #bingoCard2 #id41, #bingoCard2 #id42, #bingoCard2 #id43, #bingoCard2 #id44, #bingoCard2 #id45, #bingoCard2 #id46, #bingoCard2 #id47, #bingoCard2 #id48,
-  #bingoCard2 #id49, #bingoCard2 #id50, #bingoCard2 #id51, #bingoCard2 #id52, #bingoCard2 #id53, #bingoCard2 #id54, #bingoCard2 #id55, #bingoCard2 #id56, #bingoCard2 #id57, #bingoCard2 #id58, #bingoCard2 #id59, #bingoCard2 #id60,
-  #bingoCard2 #id61, #bingoCard2 #id62, #bingoCard2 #id63, #bingoCard2 #id64, #bingoCard2 #id65, #bingoCard2 #id66, #bingoCard2 #id67, #bingoCard2 #id68, #bingoCard2 #id69, #bingoCard2 #id70, #bingoCard2 #id71, #bingoCard2 #id72, #bingoCard3 #id1, #bingoCard3 #id2, #bingoCard3 #id3, #bingoCard3 #id4, #bingoCard3 #id5, #bingoCard3 #id6, #bingoCard3 #id7, #bingoCard3 #id8, #bingoCard3 #id9, #bingoCard3 #id10, #bingoCard3 #id11, #bingoCard3 #id12,
-  #bingoCard3 #id13, #bingoCard3 #id14, #bingoCard3 #id15, #bingoCard3 #id16, #bingoCard3 #id17, #bingoCard3 #id18, #bingoCard3 #id19, #bingoCard3 #id20, #bingoCard3 #id21, #bingoCard3 #id22, #bingoCard3 #id23, #bingoCard3 #id24,
-  #bingoCard3 #id25, #bingoCard3 #id26, #bingoCard3 #id27, #bingoCard3 #id28, #bingoCard3 #id29, #bingoCard3 #id30, #bingoCard3 #id31, #bingoCard3 #id32, #bingoCard3 #id33, #bingoCard3 #id34, #bingoCard3 #id35, #bingoCard3 #id36,
-  #bingoCard3 #id37, #bingoCard3 #id38, #bingoCard3 #id39, #bingoCard3 #id40, #bingoCard3 #id41, #bingoCard3 #id42, #bingoCard3 #id43, #bingoCard3 #id44, #bingoCard3 #id45, #bingoCard3 #id46, #bingoCard3 #id47, #bingoCard3 #id48,
-  #bingoCard3 #id49, #bingoCard3 #id50, #bingoCard3 #id51, #bingoCard3 #id52, #bingoCard3 #id53, #bingoCard3 #id54, #bingoCard3 #id55, #bingoCard3 #id56, #bingoCard3 #id57, #bingoCard3 #id58, #bingoCard3 #id59, #bingoCard3 #id60,
-  #bingoCard3 #id61, #bingoCard3 #id62, #bingoCard3 #id63, #bingoCard3 #id64, #bingoCard3 #id65, #bingoCard3 #id66, #bingoCard3 #id67, #bingoCard3 #id68, #bingoCard3 #id69, #bingoCard3 #id70, #bingoCard3 #id71, #bingoCard3 #id72, #bingoCard4 #id1, #bingoCard4 #id2, #bingoCard4 #id3, #bingoCard4 #id4, #bingoCard4 #id5, #bingoCard4 #id6, #bingoCard4 #id7, #bingoCard4 #id8, #bingoCard4 #id9, #bingoCard4 #id10, #bingoCard4 #id11, #bingoCard4 #id12,
-  #bingoCard4 #id13, #bingoCard4 #id14, #bingoCard4 #id15, #bingoCard4 #id16, #bingoCard4 #id17, #bingoCard4 #id18, #bingoCard4 #id19, #bingoCard4 #id20, #bingoCard4 #id21, #bingoCard4 #id22, #bingoCard4 #id23, #bingoCard4 #id24,
-  #bingoCard4 #id25, #bingoCard4 #id26, #bingoCard4 #id27, #bingoCard4 #id28, #bingoCard4 #id29, #bingoCard4 #id30, #bingoCard4 #id31, #bingoCard4 #id32, #bingoCard4 #id33, #bingoCard4 #id34, #bingoCard4 #id35, #bingoCard4 #id36,
-  #bingoCard4 #id37, #bingoCard4 #id38, #bingoCard4 #id39, #bingoCard4 #id40, #bingoCard4 #id41, #bingoCard4 #id42, #bingoCard4 #id43, #bingoCard4 #id44, #bingoCard4 #id45, #bingoCard4 #id46, #bingoCard4 #id47, #bingoCard4 #id48,
-  #bingoCard4 #id49, #bingoCard4 #id50, #bingoCard4 #id51, #bingoCard4 #id52, #bingoCard4 #id53, #bingoCard4 #id54, #bingoCard4 #id55, #bingoCard4 #id56, #bingoCard4 #id57, #bingoCard4 #id58, #bingoCard4 #id59, #bingoCard4 #id60,
-  #bingoCard4 #id61, #bingoCard4 #id62, #bingoCard4 #id63, #bingoCard4 #id64, #bingoCard4 #id65, #bingoCard4 #id66, #bingoCard4 #id67, #bingoCard4 #id68, #bingoCard4 #id69, #bingoCard4 #id70, #bingoCard4 #id71, #bingoCard4 #id72, #bingoCard5 #id1, #bingoCard5 #id2, #bingoCard5 #id3, #bingoCard5 #id4, #bingoCard5 #id5, #bingoCard5 #id6, #bingoCard5 #id7, #bingoCard5 #id8, #bingoCard5 #id9, #bingoCard5 #id10, #bingoCard5 #id11, #bingoCard5 #id12,
-  #bingoCard5 #id13, #bingoCard5 #id14, #bingoCard5 #id15, #bingoCard5 #id16, #bingoCard5 #id17, #bingoCard5 #id18, #bingoCard5 #id19, #bingoCard5 #id20, #bingoCard5 #id21, #bingoCard5 #id22, #bingoCard5 #id23, #bingoCard5 #id24,
-  #bingoCard5 #id25, #bingoCard5 #id26, #bingoCard5 #id27, #bingoCard5 #id28, #bingoCard5 #id29, #bingoCard5 #id30, #bingoCard5 #id31, #bingoCard5 #id32, #bingoCard5 #id33, #bingoCard5 #id34, #bingoCard5 #id35, #bingoCard5 #id36,
-  #bingoCard5 #id37, #bingoCard5 #id38, #bingoCard5 #id39, #bingoCard5 #id40, #bingoCard5 #id41, #bingoCard5 #id42, #bingoCard5 #id43, #bingoCard5 #id44, #bingoCard5 #id45, #bingoCard5 #id46, #bingoCard5 #id47, #bingoCard5 #id48,
-  #bingoCard5 #id49, #bingoCard5 #id50, #bingoCard5 #id51, #bingoCard5 #id52, #bingoCard5 #id53, #bingoCard5 #id54, #bingoCard5 #id55, #bingoCard5 #id56, #bingoCard5 #id57, #bingoCard5 #id58, #bingoCard5 #id59, #bingoCard5 #id60,
-  #bingoCard5 #id61, #bingoCard5 #id62, #bingoCard5 #id63, #bingoCard5 #id64, #bingoCard5 #id65, #bingoCard5 #id66, #bingoCard5 #id67, #bingoCard5 #id68, #bingoCard5 #id69, #bingoCard5 #id70, #bingoCard5 #id71, #bingoCard5 #id72 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto; }
-    #bingoCard #id1 img, #bingoCard #id2 img, #bingoCard #id3 img, #bingoCard #id4 img, #bingoCard #id5 img, #bingoCard #id6 img, #bingoCard #id7 img, #bingoCard #id8 img, #bingoCard #id9 img, #bingoCard #id10 img, #bingoCard #id11 img, #bingoCard #id12 img,
-    #bingoCard #id13 img, #bingoCard #id14 img, #bingoCard #id15 img, #bingoCard #id16 img, #bingoCard #id17 img, #bingoCard #id18 img, #bingoCard #id19 img, #bingoCard #id20 img, #bingoCard #id21 img, #bingoCard #id22 img, #bingoCard #id23 img, #bingoCard #id24 img,
-    #bingoCard #id25 img, #bingoCard #id26 img, #bingoCard #id27 img, #bingoCard #id28 img, #bingoCard #id29 img, #bingoCard #id30 img, #bingoCard #id31 img, #bingoCard #id32 img, #bingoCard #id33 img, #bingoCard #id34 img, #bingoCard #id35 img, #bingoCard #id36 img,
-    #bingoCard #id37 img, #bingoCard #id38 img, #bingoCard #id39 img, #bingoCard #id40 img, #bingoCard #id41 img, #bingoCard #id42 img, #bingoCard #id43 img, #bingoCard #id44 img, #bingoCard #id45 img, #bingoCard #id46 img, #bingoCard #id47 img, #bingoCard #id48 img,
-    #bingoCard #id49 img, #bingoCard #id50 img, #bingoCard #id51 img, #bingoCard #id52 img, #bingoCard #id53 img, #bingoCard #id54 img, #bingoCard #id55 img, #bingoCard #id56 img, #bingoCard #id57 img, #bingoCard #id58 img, #bingoCard #id59 img, #bingoCard #id60 img,
-    #bingoCard #id61 img, #bingoCard #id62 img, #bingoCard #id63 img, #bingoCard #id64 img, #bingoCard #id65 img, #bingoCard #id66 img, #bingoCard #id67 img, #bingoCard #id68 img, #bingoCard #id69 img, #bingoCard #id70 img, #bingoCard #id71 img, #bingoCard #id72 img, #bingoCard1 #id1 img, #bingoCard1 #id2 img, #bingoCard1 #id3 img, #bingoCard1 #id4 img, #bingoCard1 #id5 img, #bingoCard1 #id6 img, #bingoCard1 #id7 img, #bingoCard1 #id8 img, #bingoCard1 #id9 img, #bingoCard1 #id10 img, #bingoCard1 #id11 img, #bingoCard1 #id12 img,
-    #bingoCard1 #id13 img, #bingoCard1 #id14 img, #bingoCard1 #id15 img, #bingoCard1 #id16 img, #bingoCard1 #id17 img, #bingoCard1 #id18 img, #bingoCard1 #id19 img, #bingoCard1 #id20 img, #bingoCard1 #id21 img, #bingoCard1 #id22 img, #bingoCard1 #id23 img, #bingoCard1 #id24 img,
-    #bingoCard1 #id25 img, #bingoCard1 #id26 img, #bingoCard1 #id27 img, #bingoCard1 #id28 img, #bingoCard1 #id29 img, #bingoCard1 #id30 img, #bingoCard1 #id31 img, #bingoCard1 #id32 img, #bingoCard1 #id33 img, #bingoCard1 #id34 img, #bingoCard1 #id35 img, #bingoCard1 #id36 img,
-    #bingoCard1 #id37 img, #bingoCard1 #id38 img, #bingoCard1 #id39 img, #bingoCard1 #id40 img, #bingoCard1 #id41 img, #bingoCard1 #id42 img, #bingoCard1 #id43 img, #bingoCard1 #id44 img, #bingoCard1 #id45 img, #bingoCard1 #id46 img, #bingoCard1 #id47 img, #bingoCard1 #id48 img,
-    #bingoCard1 #id49 img, #bingoCard1 #id50 img, #bingoCard1 #id51 img, #bingoCard1 #id52 img, #bingoCard1 #id53 img, #bingoCard1 #id54 img, #bingoCard1 #id55 img, #bingoCard1 #id56 img, #bingoCard1 #id57 img, #bingoCard1 #id58 img, #bingoCard1 #id59 img, #bingoCard1 #id60 img,
-    #bingoCard1 #id61 img, #bingoCard1 #id62 img, #bingoCard1 #id63 img, #bingoCard1 #id64 img, #bingoCard1 #id65 img, #bingoCard1 #id66 img, #bingoCard1 #id67 img, #bingoCard1 #id68 img, #bingoCard1 #id69 img, #bingoCard1 #id70 img, #bingoCard1 #id71 img, #bingoCard1 #id72 img, #bingoCard2 #id1 img, #bingoCard2 #id2 img, #bingoCard2 #id3 img, #bingoCard2 #id4 img, #bingoCard2 #id5 img, #bingoCard2 #id6 img, #bingoCard2 #id7 img, #bingoCard2 #id8 img, #bingoCard2 #id9 img, #bingoCard2 #id10 img, #bingoCard2 #id11 img, #bingoCard2 #id12 img,
-    #bingoCard2 #id13 img, #bingoCard2 #id14 img, #bingoCard2 #id15 img, #bingoCard2 #id16 img, #bingoCard2 #id17 img, #bingoCard2 #id18 img, #bingoCard2 #id19 img, #bingoCard2 #id20 img, #bingoCard2 #id21 img, #bingoCard2 #id22 img, #bingoCard2 #id23 img, #bingoCard2 #id24 img,
-    #bingoCard2 #id25 img, #bingoCard2 #id26 img, #bingoCard2 #id27 img, #bingoCard2 #id28 img, #bingoCard2 #id29 img, #bingoCard2 #id30 img, #bingoCard2 #id31 img, #bingoCard2 #id32 img, #bingoCard2 #id33 img, #bingoCard2 #id34 img, #bingoCard2 #id35 img, #bingoCard2 #id36 img,
-    #bingoCard2 #id37 img, #bingoCard2 #id38 img, #bingoCard2 #id39 img, #bingoCard2 #id40 img, #bingoCard2 #id41 img, #bingoCard2 #id42 img, #bingoCard2 #id43 img, #bingoCard2 #id44 img, #bingoCard2 #id45 img, #bingoCard2 #id46 img, #bingoCard2 #id47 img, #bingoCard2 #id48 img,
-    #bingoCard2 #id49 img, #bingoCard2 #id50 img, #bingoCard2 #id51 img, #bingoCard2 #id52 img, #bingoCard2 #id53 img, #bingoCard2 #id54 img, #bingoCard2 #id55 img, #bingoCard2 #id56 img, #bingoCard2 #id57 img, #bingoCard2 #id58 img, #bingoCard2 #id59 img, #bingoCard2 #id60 img,
-    #bingoCard2 #id61 img, #bingoCard2 #id62 img, #bingoCard2 #id63 img, #bingoCard2 #id64 img, #bingoCard2 #id65 img, #bingoCard2 #id66 img, #bingoCard2 #id67 img, #bingoCard2 #id68 img, #bingoCard2 #id69 img, #bingoCard2 #id70 img, #bingoCard2 #id71 img, #bingoCard2 #id72 img, #bingoCard3 #id1 img, #bingoCard3 #id2 img, #bingoCard3 #id3 img, #bingoCard3 #id4 img, #bingoCard3 #id5 img, #bingoCard3 #id6 img, #bingoCard3 #id7 img, #bingoCard3 #id8 img, #bingoCard3 #id9 img, #bingoCard3 #id10 img, #bingoCard3 #id11 img, #bingoCard3 #id12 img,
-    #bingoCard3 #id13 img, #bingoCard3 #id14 img, #bingoCard3 #id15 img, #bingoCard3 #id16 img, #bingoCard3 #id17 img, #bingoCard3 #id18 img, #bingoCard3 #id19 img, #bingoCard3 #id20 img, #bingoCard3 #id21 img, #bingoCard3 #id22 img, #bingoCard3 #id23 img, #bingoCard3 #id24 img,
-    #bingoCard3 #id25 img, #bingoCard3 #id26 img, #bingoCard3 #id27 img, #bingoCard3 #id28 img, #bingoCard3 #id29 img, #bingoCard3 #id30 img, #bingoCard3 #id31 img, #bingoCard3 #id32 img, #bingoCard3 #id33 img, #bingoCard3 #id34 img, #bingoCard3 #id35 img, #bingoCard3 #id36 img,
-    #bingoCard3 #id37 img, #bingoCard3 #id38 img, #bingoCard3 #id39 img, #bingoCard3 #id40 img, #bingoCard3 #id41 img, #bingoCard3 #id42 img, #bingoCard3 #id43 img, #bingoCard3 #id44 img, #bingoCard3 #id45 img, #bingoCard3 #id46 img, #bingoCard3 #id47 img, #bingoCard3 #id48 img,
-    #bingoCard3 #id49 img, #bingoCard3 #id50 img, #bingoCard3 #id51 img, #bingoCard3 #id52 img, #bingoCard3 #id53 img, #bingoCard3 #id54 img, #bingoCard3 #id55 img, #bingoCard3 #id56 img, #bingoCard3 #id57 img, #bingoCard3 #id58 img, #bingoCard3 #id59 img, #bingoCard3 #id60 img,
-    #bingoCard3 #id61 img, #bingoCard3 #id62 img, #bingoCard3 #id63 img, #bingoCard3 #id64 img, #bingoCard3 #id65 img, #bingoCard3 #id66 img, #bingoCard3 #id67 img, #bingoCard3 #id68 img, #bingoCard3 #id69 img, #bingoCard3 #id70 img, #bingoCard3 #id71 img, #bingoCard3 #id72 img, #bingoCard4 #id1 img, #bingoCard4 #id2 img, #bingoCard4 #id3 img, #bingoCard4 #id4 img, #bingoCard4 #id5 img, #bingoCard4 #id6 img, #bingoCard4 #id7 img, #bingoCard4 #id8 img, #bingoCard4 #id9 img, #bingoCard4 #id10 img, #bingoCard4 #id11 img, #bingoCard4 #id12 img,
-    #bingoCard4 #id13 img, #bingoCard4 #id14 img, #bingoCard4 #id15 img, #bingoCard4 #id16 img, #bingoCard4 #id17 img, #bingoCard4 #id18 img, #bingoCard4 #id19 img, #bingoCard4 #id20 img, #bingoCard4 #id21 img, #bingoCard4 #id22 img, #bingoCard4 #id23 img, #bingoCard4 #id24 img,
-    #bingoCard4 #id25 img, #bingoCard4 #id26 img, #bingoCard4 #id27 img, #bingoCard4 #id28 img, #bingoCard4 #id29 img, #bingoCard4 #id30 img, #bingoCard4 #id31 img, #bingoCard4 #id32 img, #bingoCard4 #id33 img, #bingoCard4 #id34 img, #bingoCard4 #id35 img, #bingoCard4 #id36 img,
-    #bingoCard4 #id37 img, #bingoCard4 #id38 img, #bingoCard4 #id39 img, #bingoCard4 #id40 img, #bingoCard4 #id41 img, #bingoCard4 #id42 img, #bingoCard4 #id43 img, #bingoCard4 #id44 img, #bingoCard4 #id45 img, #bingoCard4 #id46 img, #bingoCard4 #id47 img, #bingoCard4 #id48 img,
-    #bingoCard4 #id49 img, #bingoCard4 #id50 img, #bingoCard4 #id51 img, #bingoCard4 #id52 img, #bingoCard4 #id53 img, #bingoCard4 #id54 img, #bingoCard4 #id55 img, #bingoCard4 #id56 img, #bingoCard4 #id57 img, #bingoCard4 #id58 img, #bingoCard4 #id59 img, #bingoCard4 #id60 img,
-    #bingoCard4 #id61 img, #bingoCard4 #id62 img, #bingoCard4 #id63 img, #bingoCard4 #id64 img, #bingoCard4 #id65 img, #bingoCard4 #id66 img, #bingoCard4 #id67 img, #bingoCard4 #id68 img, #bingoCard4 #id69 img, #bingoCard4 #id70 img, #bingoCard4 #id71 img, #bingoCard4 #id72 img, #bingoCard5 #id1 img, #bingoCard5 #id2 img, #bingoCard5 #id3 img, #bingoCard5 #id4 img, #bingoCard5 #id5 img, #bingoCard5 #id6 img, #bingoCard5 #id7 img, #bingoCard5 #id8 img, #bingoCard5 #id9 img, #bingoCard5 #id10 img, #bingoCard5 #id11 img, #bingoCard5 #id12 img,
-    #bingoCard5 #id13 img, #bingoCard5 #id14 img, #bingoCard5 #id15 img, #bingoCard5 #id16 img, #bingoCard5 #id17 img, #bingoCard5 #id18 img, #bingoCard5 #id19 img, #bingoCard5 #id20 img, #bingoCard5 #id21 img, #bingoCard5 #id22 img, #bingoCard5 #id23 img, #bingoCard5 #id24 img,
-    #bingoCard5 #id25 img, #bingoCard5 #id26 img, #bingoCard5 #id27 img, #bingoCard5 #id28 img, #bingoCard5 #id29 img, #bingoCard5 #id30 img, #bingoCard5 #id31 img, #bingoCard5 #id32 img, #bingoCard5 #id33 img, #bingoCard5 #id34 img, #bingoCard5 #id35 img, #bingoCard5 #id36 img,
-    #bingoCard5 #id37 img, #bingoCard5 #id38 img, #bingoCard5 #id39 img, #bingoCard5 #id40 img, #bingoCard5 #id41 img, #bingoCard5 #id42 img, #bingoCard5 #id43 img, #bingoCard5 #id44 img, #bingoCard5 #id45 img, #bingoCard5 #id46 img, #bingoCard5 #id47 img, #bingoCard5 #id48 img,
-    #bingoCard5 #id49 img, #bingoCard5 #id50 img, #bingoCard5 #id51 img, #bingoCard5 #id52 img, #bingoCard5 #id53 img, #bingoCard5 #id54 img, #bingoCard5 #id55 img, #bingoCard5 #id56 img, #bingoCard5 #id57 img, #bingoCard5 #id58 img, #bingoCard5 #id59 img, #bingoCard5 #id60 img,
-    #bingoCard5 #id61 img, #bingoCard5 #id62 img, #bingoCard5 #id63 img, #bingoCard5 #id64 img, #bingoCard5 #id65 img, #bingoCard5 #id66 img, #bingoCard5 #id67 img, #bingoCard5 #id68 img, #bingoCard5 #id69 img, #bingoCard5 #id70 img, #bingoCard5 #id71 img, #bingoCard5 #id72 img {
-      width: 70px; }
-  #bingoCard #id1, #bingoCard1 #id1, #bingoCard2 #id1, #bingoCard3 #id1, #bingoCard4 #id1, #bingoCard5 #id1 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id2, #bingoCard1 #id2, #bingoCard2 #id2, #bingoCard3 #id2, #bingoCard4 #id2, #bingoCard5 #id2 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id3, #bingoCard1 #id3, #bingoCard2 #id3, #bingoCard3 #id3, #bingoCard4 #id3, #bingoCard5 #id3 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id4, #bingoCard1 #id4, #bingoCard2 #id4, #bingoCard3 #id4, #bingoCard4 #id4, #bingoCard5 #id4 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id5, #bingoCard1 #id5, #bingoCard2 #id5, #bingoCard3 #id5, #bingoCard4 #id5, #bingoCard5 #id5 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id6, #bingoCard1 #id6, #bingoCard2 #id6, #bingoCard3 #id6, #bingoCard4 #id6, #bingoCard5 #id6 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id7, #bingoCard1 #id7, #bingoCard2 #id7, #bingoCard3 #id7, #bingoCard4 #id7, #bingoCard5 #id7 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id8, #bingoCard1 #id8, #bingoCard2 #id8, #bingoCard3 #id8, #bingoCard4 #id8, #bingoCard5 #id8 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id9, #bingoCard1 #id9, #bingoCard2 #id9, #bingoCard3 #id9, #bingoCard4 #id9, #bingoCard5 #id9 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id10, #bingoCard1 #id10, #bingoCard2 #id10, #bingoCard3 #id10, #bingoCard4 #id10, #bingoCard5 #id10 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id11, #bingoCard1 #id11, #bingoCard2 #id11, #bingoCard3 #id11, #bingoCard4 #id11, #bingoCard5 #id11 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id12, #bingoCard1 #id12, #bingoCard2 #id12, #bingoCard3 #id12, #bingoCard4 #id12, #bingoCard5 #id12 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
-  #bingoCard #id13, #bingoCard1 #id13, #bingoCard2 #id13, #bingoCard3 #id13, #bingoCard4 #id13, #bingoCard5 #id13 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id14, #bingoCard1 #id14, #bingoCard2 #id14, #bingoCard3 #id14, #bingoCard4 #id14, #bingoCard5 #id14 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id15, #bingoCard1 #id15, #bingoCard2 #id15, #bingoCard3 #id15, #bingoCard4 #id15, #bingoCard5 #id15 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id16, #bingoCard1 #id16, #bingoCard2 #id16, #bingoCard3 #id16, #bingoCard4 #id16, #bingoCard5 #id16 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id17, #bingoCard1 #id17, #bingoCard2 #id17, #bingoCard3 #id17, #bingoCard4 #id17, #bingoCard5 #id17 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id18, #bingoCard1 #id18, #bingoCard2 #id18, #bingoCard3 #id18, #bingoCard4 #id18, #bingoCard5 #id18 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id19, #bingoCard1 #id19, #bingoCard2 #id19, #bingoCard3 #id19, #bingoCard4 #id19, #bingoCard5 #id19 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id20, #bingoCard1 #id20, #bingoCard2 #id20, #bingoCard3 #id20, #bingoCard4 #id20, #bingoCard5 #id20 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id21, #bingoCard1 #id21, #bingoCard2 #id21, #bingoCard3 #id21, #bingoCard4 #id21, #bingoCard5 #id21 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id22, #bingoCard1 #id22, #bingoCard2 #id22, #bingoCard3 #id22, #bingoCard4 #id22, #bingoCard5 #id22 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id23, #bingoCard1 #id23, #bingoCard2 #id23, #bingoCard3 #id23, #bingoCard4 #id23, #bingoCard5 #id23 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id24, #bingoCard1 #id24, #bingoCard2 #id24, #bingoCard3 #id24, #bingoCard4 #id24, #bingoCard5 #id24 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
-  #bingoCard #id25, #bingoCard1 #id25, #bingoCard2 #id25, #bingoCard3 #id25, #bingoCard4 #id25, #bingoCard5 #id25 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id26, #bingoCard1 #id26, #bingoCard2 #id26, #bingoCard3 #id26, #bingoCard4 #id26, #bingoCard5 #id26 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id27, #bingoCard1 #id27, #bingoCard2 #id27, #bingoCard3 #id27, #bingoCard4 #id27, #bingoCard5 #id27 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id28, #bingoCard1 #id28, #bingoCard2 #id28, #bingoCard3 #id28, #bingoCard4 #id28, #bingoCard5 #id28 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id29, #bingoCard1 #id29, #bingoCard2 #id29, #bingoCard3 #id29, #bingoCard4 #id29, #bingoCard5 #id29 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id30, #bingoCard1 #id30, #bingoCard2 #id30, #bingoCard3 #id30, #bingoCard4 #id30, #bingoCard5 #id30 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id31, #bingoCard1 #id31, #bingoCard2 #id31, #bingoCard3 #id31, #bingoCard4 #id31, #bingoCard5 #id31 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id32, #bingoCard1 #id32, #bingoCard2 #id32, #bingoCard3 #id32, #bingoCard4 #id32, #bingoCard5 #id32 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id33, #bingoCard1 #id33, #bingoCard2 #id33, #bingoCard3 #id33, #bingoCard4 #id33, #bingoCard5 #id33 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id34, #bingoCard1 #id34, #bingoCard2 #id34, #bingoCard3 #id34, #bingoCard4 #id34, #bingoCard5 #id34 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id35, #bingoCard1 #id35, #bingoCard2 #id35, #bingoCard3 #id35, #bingoCard4 #id35, #bingoCard5 #id35 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id36, #bingoCard1 #id36, #bingoCard2 #id36, #bingoCard3 #id36, #bingoCard4 #id36, #bingoCard5 #id36 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
-  #bingoCard #id37, #bingoCard1 #id37, #bingoCard2 #id37, #bingoCard3 #id37, #bingoCard4 #id37, #bingoCard5 #id37 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id38, #bingoCard1 #id38, #bingoCard2 #id38, #bingoCard3 #id38, #bingoCard4 #id38, #bingoCard5 #id38 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id39, #bingoCard1 #id39, #bingoCard2 #id39, #bingoCard3 #id39, #bingoCard4 #id39, #bingoCard5 #id39 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id40, #bingoCard1 #id40, #bingoCard2 #id40, #bingoCard3 #id40, #bingoCard4 #id40, #bingoCard5 #id40 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id41, #bingoCard1 #id41, #bingoCard2 #id41, #bingoCard3 #id41, #bingoCard4 #id41, #bingoCard5 #id41 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id42, #bingoCard1 #id42, #bingoCard2 #id42, #bingoCard3 #id42, #bingoCard4 #id42, #bingoCard5 #id42 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id43, #bingoCard1 #id43, #bingoCard2 #id43, #bingoCard3 #id43, #bingoCard4 #id43, #bingoCard5 #id43 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id44, #bingoCard1 #id44, #bingoCard2 #id44, #bingoCard3 #id44, #bingoCard4 #id44, #bingoCard5 #id44 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id45, #bingoCard1 #id45, #bingoCard2 #id45, #bingoCard3 #id45, #bingoCard4 #id45, #bingoCard5 #id45 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id46, #bingoCard1 #id46, #bingoCard2 #id46, #bingoCard3 #id46, #bingoCard4 #id46, #bingoCard5 #id46 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id47, #bingoCard1 #id47, #bingoCard2 #id47, #bingoCard3 #id47, #bingoCard4 #id47, #bingoCard5 #id47 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id48, #bingoCard1 #id48, #bingoCard2 #id48, #bingoCard3 #id48, #bingoCard4 #id48, #bingoCard5 #id48 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
-  #bingoCard #id49, #bingoCard1 #id49, #bingoCard2 #id49, #bingoCard3 #id49, #bingoCard4 #id49, #bingoCard5 #id49 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id50, #bingoCard1 #id50, #bingoCard2 #id50, #bingoCard3 #id50, #bingoCard4 #id50, #bingoCard5 #id50 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id51, #bingoCard1 #id51, #bingoCard2 #id51, #bingoCard3 #id51, #bingoCard4 #id51, #bingoCard5 #id51 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id52, #bingoCard1 #id52, #bingoCard2 #id52, #bingoCard3 #id52, #bingoCard4 #id52, #bingoCard5 #id52 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id53, #bingoCard1 #id53, #bingoCard2 #id53, #bingoCard3 #id53, #bingoCard4 #id53, #bingoCard5 #id53 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id54, #bingoCard1 #id54, #bingoCard2 #id54, #bingoCard3 #id54, #bingoCard4 #id54, #bingoCard5 #id54 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id55, #bingoCard1 #id55, #bingoCard2 #id55, #bingoCard3 #id55, #bingoCard4 #id55, #bingoCard5 #id55 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id56, #bingoCard1 #id56, #bingoCard2 #id56, #bingoCard3 #id56, #bingoCard4 #id56, #bingoCard5 #id56 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id57, #bingoCard1 #id57, #bingoCard2 #id57, #bingoCard3 #id57, #bingoCard4 #id57, #bingoCard5 #id57 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id58, #bingoCard1 #id58, #bingoCard2 #id58, #bingoCard3 #id58, #bingoCard4 #id58, #bingoCard5 #id58 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id59, #bingoCard1 #id59, #bingoCard2 #id59, #bingoCard3 #id59, #bingoCard4 #id59, #bingoCard5 #id59 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id60, #bingoCard1 #id60, #bingoCard2 #id60, #bingoCard3 #id60, #bingoCard4 #id60, #bingoCard5 #id60 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
-  #bingoCard #id61, #bingoCard1 #id61, #bingoCard2 #id61, #bingoCard3 #id61, #bingoCard4 #id61, #bingoCard5 #id61 {
-    grid-row: 2/3;
-    grid-column: 2/3; }
-  #bingoCard #id62, #bingoCard1 #id62, #bingoCard2 #id62, #bingoCard3 #id62, #bingoCard4 #id62, #bingoCard5 #id62 {
-    grid-row: 2/3;
-    grid-column: 3/4; }
-  #bingoCard #id63, #bingoCard1 #id63, #bingoCard2 #id63, #bingoCard3 #id63, #bingoCard4 #id63, #bingoCard5 #id63 {
-    grid-row: 2/3;
-    grid-column: 4/5; }
-  #bingoCard #id64, #bingoCard1 #id64, #bingoCard2 #id64, #bingoCard3 #id64, #bingoCard4 #id64, #bingoCard5 #id64 {
-    grid-row: 2/3;
-    grid-column: 5/6; }
-  #bingoCard #id65, #bingoCard1 #id65, #bingoCard2 #id65, #bingoCard3 #id65, #bingoCard4 #id65, #bingoCard5 #id65 {
-    grid-row: 3/4;
-    grid-column: 2/3; }
-  #bingoCard #id66, #bingoCard1 #id66, #bingoCard2 #id66, #bingoCard3 #id66, #bingoCard4 #id66, #bingoCard5 #id66 {
-    grid-row: 3/4;
-    grid-column: 3/4; }
-  #bingoCard #id67, #bingoCard1 #id67, #bingoCard2 #id67, #bingoCard3 #id67, #bingoCard4 #id67, #bingoCard5 #id67 {
-    grid-row: 3/4;
-    grid-column: 4/5; }
-  #bingoCard #id68, #bingoCard1 #id68, #bingoCard2 #id68, #bingoCard3 #id68, #bingoCard4 #id68, #bingoCard5 #id68 {
-    grid-row: 3/4;
-    grid-column: 5/6; }
-  #bingoCard #id69, #bingoCard1 #id69, #bingoCard2 #id69, #bingoCard3 #id69, #bingoCard4 #id69, #bingoCard5 #id69 {
-    grid-row: 4/5;
-    grid-column: 2/3; }
-  #bingoCard #id70, #bingoCard1 #id70, #bingoCard2 #id70, #bingoCard3 #id70, #bingoCard4 #id70, #bingoCard5 #id70 {
-    grid-row: 4/5;
-    grid-column: 3/4; }
-  #bingoCard #id71, #bingoCard1 #id71, #bingoCard2 #id71, #bingoCard3 #id71, #bingoCard4 #id71, #bingoCard5 #id71 {
-    grid-row: 4/5;
-    grid-column: 4/5; }
-  #bingoCard #id72, #bingoCard1 #id72, #bingoCard2 #id72, #bingoCard3 #id72, #bingoCard4 #id72, #bingoCard5 #id72 {
-    grid-row: 4/5;
-    grid-column: 5/6; }
+  align-self: center;
+  justify-self: center; }
+  .content-4__text, .content-5__text, .content-6__text, .content-7__text, .content-8__text, .content-9__text {
+    width: 400px;
+    height: 70px;
+    margin-top: 1.6rem;
+    margin-left: 5%; }
+    .content-4__text p, .content-5__text p, .content-6__text p, .content-7__text p, .content-8__text p, .content-9__text p {
+      line-height: 2.2rem; }
+    .content-4__text h2, .content-5__text h2, .content-6__text h2, .content-7__text h2, .content-8__text h2, .content-9__text h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #368cbf; }
+  .content-4 img, .content-5 img, .content-6 img, .content-7 img, .content-8 img, .content-9 img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 3rem;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    transition: all .5s ease; }
+    .content-4 img:hover, .content-5 img:hover, .content-6 img:hover, .content-7 img:hover, .content-8 img:hover, .content-9 img:hover {
+      opacity: 0.8; }
+    .content-4 img:active, .content-5 img:active, .content-6 img:active, .content-7 img:active, .content-8 img:active, .content-9 img:active {
+      transform: translateY(2px);
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
+  .content-4 a, .content-5 a, .content-6 a, .content-7 a, .content-8 a, .content-9 a {
+    color: #368cbf;
+    text-decoration: none;
+    font-weight: bolder; }
 
 .links {
   grid-row: 3/4;
   grid-column: 2/3;
   width: 700px;
-  height: 420px;
+  height: 460px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-between;
   justify-self: center;
   text-align: center;
   margin: 4rem 0;
   padding: 2rem 0rem;
-  background-color: #e8e4c9;
+  background-color: #faebaf;
   justify-content: flex-start;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 62.5em) {
@@ -900,7 +674,7 @@ imgBg.smaller {
   .links__text {
     margin-bottom: 3rem;
     margin-top: 2rem;
-    color: #594f73;
+    color: #368cbf;
     font-size: 2rem; }
   .links__images {
     display: flex;
@@ -916,23 +690,27 @@ imgBg.smaller {
       .links__images-1 figcaption {
         margin-top: 1rem;
         margin-bottom: 2rem;
-        font-size: 1.2rem;
-        text-align: center; }
+        font-size: 1.8rem;
+        text-align: center;
+        color: #368cbf; }
+        .links__images-1 figcaption a {
+          text-decoration: none;
+          color: #368cbf;
+          font-weight: bolder; }
 
 .footer {
   display: flex;
   width: 1200px;
   margin: auto;
-  border: 1px solid #120437;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #e8e4c9;
+  color: #fff;
   padding: 1.5rem 0;
   height: 7rem;
-  background-color: #120437;
+  background-color: #368cbf;
   border-top: 1px solid #fff;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 75em) {
     .footer {
       width: 100vw; } }
@@ -946,4 +724,4 @@ imgBg.smaller {
       font-size: 1.2rem; }
 
 #footer a {
-  color: #F75F1C; }
+  color: #f8e38c; }

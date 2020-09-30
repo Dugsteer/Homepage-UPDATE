@@ -4,16 +4,15 @@
   display: flex;
   width: 1200px;
   margin: auto;
-  border: 1px solid $color-halloween;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: $color-halloween-white;
+  color: #fff;
   padding: 1.5rem 0;
   height: 7rem;
-  background-color: $color-halloween;
+  background-color: $color-blue;
   border-top: 1px solid #fff;
-  box-shadow: $box-shadow-large;
+  box-shadow: $box-shadow-small;
 
   @media only screen and (max-width: $bp-largest){
     width: 100vw;
@@ -34,14 +33,8 @@
     }
   }
 
-  // @media only screen and (max-width: $bp-small){
-  //   position: fixed;
-  //   bottom: 0px;
-  //   left: 0px;
-  //   width: 100%;
-  // }
 }
 
 #footer a{
-  color: $color-halloween-orange;
+  color: $color-yellow;
 }
