@@ -52,20 +52,20 @@ body {
 
  }
 
-@media print {
-  .container {
-    content: 'My Window';
-    background-color: white;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 15px;
-        grid-template-rows: 520px 520px 520px;
-        grid-template-columns: 520px 520px;
-        font-size: 14px;
-        line-height: 18px;
+// @media print {
+//   .container {
+//     content: 'My Window';
+//     background-color: white;
+//         height: 100%;
+//         width: 100%;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         padding: 15px;
+//         grid-template-rows: 520px 520px 520px;
+//         grid-template-columns: 520px 520px;
+//         font-size: 14px;
+//         line-height: 18px;
 
-  }
-}
+//   }
+// }

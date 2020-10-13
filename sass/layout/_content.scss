@@ -9,7 +9,11 @@
 
   @media only screen and (max-width: $bp-large){
     grid-template-columns: 450px;
-    grid-template-rows: repeat(6, 480px);
+    grid-template-rows: repeat(6, 500px);
+  }
+  @media only screen and (max-width: $bp-small){
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(6, 450px);
   }
 
 
@@ -27,15 +31,32 @@
   height: 450px;
   align-self: center;
   justify-self: center;
+  margin-bottom: 2rem;
+
+  
+
+  @media only screen and (max-width: $bp-small){
+    height: 430px;
+  }
+
+  &:hover {
+    box-shadow:2px 2px 5px 4px rgba(0,0,0,0.4);
+  }
+
 
   &__text {
     width: 400px;
     height: 70px;
     margin-top: 1.6rem;
     margin-left: 5%;
+
+    @media only screen and (max-width:$bp-small){
+      width: 300px;
+    }
  
     & p {
       line-height: 2.2rem;
+      padding-right: 1rem;
     }
 
     & h2 {
@@ -73,6 +94,16 @@
 
 }
 
+.content-6 img {
+  width: 70%;
+  margin-left: 15%;
+}
+.content-8 img,
+.content-9 img {
+  width: 90%;
+  margin-left: 5%;
+
+}
 
 
 

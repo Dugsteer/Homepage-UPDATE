@@ -3,25 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A creepy game of bingo for students and young learners of English based on halloween vocabulary with printable bingo cards.">
-    <meta name="keywords" content="Halloween printable bingo class games">
-    <title>Halloween ESL Vocabulary Bingo</title>
+    <meta name="description" content="Online flashcards, games and tools for English teachers to use with web-based classes or projected in the classroom.">
+    <meta name="keywords" content="class games online EFL English teachers worksheets mazes">
+    <title>Esl-Ology.Com: Tools for TEFL</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="csi.min.js"></script>
     <script data-ad-client="ca-pub-6192312197226967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 
- <div class="loader-div" id="loaderDiv">
+ <div class="loader-div" id="loaderDiv" onload = "checkForTop();">
     <div class="loader-container">
       <img class="ghost" src="img/LightBulb.png" alt=""> 
-    
-    
-    
-      <p class="shadowFrame"><svg version="1.1" class="shadow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="61px" y="20px"
+    <p class="shadowFrame"><svg version="1.1" class="shadow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="61px" y="20px"
        width="122.436px" height="39.744px" viewBox="0 0 122.436 39.744" enable-background="new 0 0 122.436 39.744"
        xml:space="preserve">
     <ellipse fill="rgb(18, 4, 55)" cx="61.128" cy="19.872" rx="49.25" ry="8.916"/>
@@ -50,18 +47,22 @@
 
     <div id="wrapper" class="wrapper">
 
-        <div class="imagediv">
+
+
+        <div class="imagediv" id="imageCard">
            <img src="img/HappyHalloween.png" alt="">
         </div>
 
+
+        
       <div class="sidebar-container" id="conto">
         <div data-include="sidebar.html">
         </div>
       </div>
 
         <div class="introduction">
-          <div class="introduction__img" id="ghostly" onclick="ghostify();">
-            <img src="img/london.png" alt="decorative">
+          <div class="introduction__img" id="ghostly">
+            <img src="img/london.png" alt="">
           </div>
           <div class="introduction__text">
             <h1>Welcome to Esl-ology.com
@@ -77,14 +78,17 @@
         
   <div class="content-4">
     <figure class="content-4__img">
-       <a href="matching-clothes.html"><img src="./img/ClothesMemory.jpg" alt="A picture of a vehicles pelmanism game"/></a> 
+       <a href="frogify-halloween.html"><img src="./img/frogify-image.jpg" alt="A picture of a halloween game"/></a> 
       </figure>
     <div class="content-4__text">
-      <h2 class= "content-title">Matching Card Games</h2>
-      <p class="content-1__text"> A <a href="matching-clothes.html">classic warmer</a> or end of class activity with letters and numbers so that it's easier for teams to play on the big screen. There are three sets of words for each vocabulary set.
+      <h2 class= "content-title">Frogification</h2>
+      <p class="content-1__text"> A <a href="frogify-halloween.html">Halloween</a> observation game. Students have to say which characters have been turned into frogs. It starts hard but gets easier. Check out the how-to video on <a href="https://www.youtube.com/watch?v=5WUkorMKisc">YouTube</a>.
       </p>
     </div>
  </div>
+
+
+ 
 
  <div class="content-5">
   <figure class="content-5__img">
@@ -98,8 +102,7 @@
  <div class="content-5__text">
   <h2 class= "content-title">Grammar Mazes</h2>
    <p class="content-1__text">
-     All of the (upcoming) <a href="questions-maze.html">grammar mazes </a>and slideshows can be viewed in full-screen mode. You are
-     welcome to copy them to use as templates to make your own.
+     All of the (upcoming) <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through. Another way of looking at it is 'stealth drilling'. 
    </p>
  </div>
 </div>
@@ -116,8 +119,7 @@
   <div class="content-6__text">
     <h2 class= "content-title">Vocabulary Bingo Cards</h2>
     <p class="content-1__text">
-      Generate and print random <a href="bingo-halloween.html">bingo cards</a> and then use the online bingo
-      caller to choose the 'numbers' that appear.
+      Use a computer to generate and print out random sets of <a href="bingo-halloween.html">bingo cards</a> for a quick, fun way to back up learning vocabulary sets. Use the online caller to see which comes next.
     </p>
   </div>
 </div>
@@ -142,12 +144,12 @@
 
 <div class="content-8">
   <figure class="content-8__img">
-<img src="img/TalkShow.jpg" alt="">
+<a href= "talk-minute.html"><img src="img/TalkShow.jpg" alt=""></a>
   </figure>
   <div class="content-8__text">
-    <h2 class= "content-title">Flash Cards</h2>
+    <h2 class= "content-title">Talk for a Minute</h2>
     <p class="content-1__text">
-      A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, either with traditional flashcards or modern 'hover cards', these are available both with images and with photos.
+      Do you have something to say? Could you <a href="talk-minute.html">talk for a minute</a> about it in class, without hesitation, repetition, bad English or going off topic? It's time to find out!
     </p>
   </div>
 </div>
@@ -159,7 +161,7 @@
   <div class="content-8__text">
     <h2 class= "content-title">HALLOWEEN HANGMAN</h2>
     <p class="content-1__text">
-      A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, either with traditional flashcards or modern 'hover cards', these are available both with images and with photos.
+      Hangman is always useful as a warmer or to fill the last five minutes. Now it's even easier with our <a href="flashcard-animals.html">online version</a>. Choose a word or let the website do it for you. Have fun!
     </p>
   </div>
 </div>
@@ -178,32 +180,28 @@
             <figure class="iclass">
               <iframe width="290" height="160" src="https://www.youtube.com/embed/Fn-GRtN3MKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </figure>
-              <figcaption>Learn how your class can play Talk for a Minute over on our <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA">YouTube</a> channel, where you can watch out for more upcoming videos.</figcaption>
+              <figcaption>Learn how your class can play <a href="talk-minute.html">Talk for a Minute</a> over on our <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA">YouTube</a> channel, where you can watch out for more upcoming videos.</figcaption>
           </div>
           <div class="links__images-1 figure">
-            <a href="bingo-halloween.html">
+            <a href="memory-halloween.html">
             <img src="img/HalloweenMatching.jpg" alt=""></a>
-              <figcaption><a href="bingo-halloween.html">Halloween Bingo</a> with Printable Cards</figcaption>
+              <figcaption><a href="memory-halloween.html">Halloween Card Matching.</a> Click on the graves!</figcaption>
           </div>
       </div>
 
 
     </div>
-        </div>
-
-    
-
-
-         
-    
+  </div>
 
       </div>
 
+
+
+      
     <footer class="footer">
       <div class="footer__copyright" id="footer">
         <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
-        <p>Vectors & images
-    by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a> & <a href="flaticon-credits2.html" title="Freepik">Flaticon/Freepik</a>&nbsp <a href="halloween-hangman-credits.html">  Further credits here.</a> Thanks,guys!</p>
+        <p>Image credits <a href="homepage-credits.html">here</a>. Thanks,guys!</p>
   </div>
     </footer>
 
@@ -219,15 +217,15 @@
       }
     preload(
       "img/AnimalFlash.jpg",
-      "ClothesMemory.jpg",
-      "HalloweenBingoCard.jpg",
-      "HalloweenMatching.jpg",
-      "HangmanPic.jpg",
-      "HappyHalloween.png",
-      "LightBulb.png",
-      "london.png",
-      "QuestionsMaze.jpg",
-      "TalkShow.jpg"
+      "img/ClothesMemory.jpg",
+      "img/HalloweenBingoCard.jpg",
+      "img/HalloweenMatching.jpg",
+      "img/HangmanPic.jpg",
+      "img/HappyHalloween.png",
+      "img/LightBulb.png",
+      "img/london.png",
+      "img/QuestionsMaze.jpg",
+      "img/TalkShow.jpg"
     )
       //--><!]]>
     </script>
