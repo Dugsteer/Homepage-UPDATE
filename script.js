@@ -48,6 +48,13 @@ function jiggleYou(){
 }
 
 
+function playHorn(){
+  const beep = new Audio("sounds/bus-horn.mp3");
+  beep.play();
+}
+
+jiggly.addEventListener('click', playHorn);
+
 
 //check for top of window
 function checkForTop (){
