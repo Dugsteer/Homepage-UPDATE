@@ -26,6 +26,17 @@ function picChanger(){
 }
 
 
+//Christmas Countdown
+const countdown = document.getElementById('countdown');
+today=new Date();
+var cmas=new Date(today.getFullYear(), 11, 25);
+if (today.getMonth()==11 && today.getDate()>25) 
+{
+cmas.setFullYear(cmas.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+countdown.innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)));
+
 //Jiggle the imagecard
 
 setInterval(jiggleMe, 15000);

@@ -160,3 +160,24 @@
    display: none;
  }
 }
+
+.countdown {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  top: 10px;
+  left: 150px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: yellow;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+}
+
+.countdown h3 {
+  font-size: 4rem;
+  color: red;
+}
