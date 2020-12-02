@@ -1,5 +1,5 @@
 const menu = document.getElementById("menu");
-const sidey = document.getElementById("conto");
+const sidey = document.getElementById("sidebar");
 const blue = window.matchMedia("(max-width: 800px)");
 const changePic = document.getElementById('ghostly');
 const loader = document.getElementById("loaderDiv");
@@ -88,16 +88,8 @@ setTimeout(stopLoader, 1000);
 
 
 
-function myFunction(x) {
-  if (blue.matches) {
-    sidey.classList.remove("block");
-  }
-}
-
-function toggler() {
-  sidey.classList.toggle("block");
-}
-
+function myFunction(x) {if (blue.matches) {sidey.classList.remove("block");}}
+function toggler() {sidey.classList.toggle("block");}
 myFunction(blue);
 
 //GENERAL SCRIPT
