@@ -1,8 +1,7 @@
 .links {
-    grid-row: 3/4;
+    grid-row: 5/6;
     grid-column: 2/3;
     width: 700px;
-    height: 460px;
     display: flex;
     flex-direction:column;
     align-items: space-between;
@@ -16,19 +15,16 @@
 
     @media only screen and (max-width:$bp-large){
         width: 600px;
-        height: 400px;
         
        }
     @media only screen and (max-width:$bp-small){
         justify-content: center;
         width: 400px;
-        height: 670px;
         
        }
     @media only screen and (max-width:$bp-smallest){
         justify-content: center;
         width: 350px;
-        height: 670px;
         
        }
 

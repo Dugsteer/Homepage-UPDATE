@@ -24,6 +24,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 430px;
+  height: 450px;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+  .content-5, .content-6, .content-7, .content-8, .content-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   box-shadow: $box-shadow-small;
   border-radius: 5px;
   background-color: #fff;

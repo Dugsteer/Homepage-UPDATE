@@ -70,6 +70,10 @@ h4 {
   grid-row: 1/2;
   grid-column: 2/3; }
 
+.sense-bottom {
+  grid-row: 4/5;
+  grid-column: 2/3; }
+
 .loader-div {
   background-color: #368cbf;
   display: flex;
@@ -140,21 +144,21 @@ h4 {
     margin: 0 5%; } }
 
 .sidebar {
-  grid-row: 1/5;
+  grid-row: 1/7;
   grid-column: 1/2;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   padding: 1rem;
-  height: 100%;
   transition: all 0.2s ease-in-out; }
   @media only screen and (max-width: 50em) {
     .sidebar {
       position: absolute;
       width: 100vw;
       z-index: 500;
-      height: auto;
+      height: 100%;
       padding: 3rem; } }
   @media only screen and (max-width: 28em) {
     .sidebar {
@@ -249,7 +253,7 @@ h4 {
   fill: darkgrey; }
 
 .sidebar-container {
-  grid-row: 1/4;
+  grid-row: 1/7;
   grid-column: 1/2;
   height: 100%; }
   @media only screen and (max-width: 50em) {
@@ -459,9 +463,10 @@ h4 {
     fill: #7ebc59; }
 
 .introduction {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 2/3;
   width: 800px;
   height: 600px;
@@ -568,7 +573,7 @@ h4 {
   height: 190px;
   z-index: 10;
   top: 50px;
-  left: 255px;
+  left: 62px;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   transform: rotate(-20deg);
   background-color: #fff;
@@ -607,7 +612,7 @@ h4 {
   align-items: center;
   background-color: #d0eaf8;
   margin: 0 auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 23rem 1fr; }
   @media only screen and (max-width: 75em) {
     .wrapper {
@@ -627,22 +632,22 @@ h4 {
 
 @keyframes jiggler {
   0% {
-    left: 253px;
+    left: 63px;
     top: 48px;
     transform: rotate(-18deg);
     opacity: 1; }
   20% {
-    left: 257px;
+    left: 60px;
     top: 47px;
     transform: rotate(-22deg);
     opacity: .7; }
   64% {
-    left: 253px;
+    left: 63px;
     top: 46px;
     transform: rotate(-19deg);
     opacity: .4; }
   80% {
-    left: 257px;
+    left: 60px;
     top: 51px;
     transform: rotate(-21deg);
     opacity: .2; } }
@@ -669,6 +674,17 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 430px;
+  height: 450px;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem; }
+
+.content-5, .content-6, .content-7, .content-8, .content-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: #fff;
@@ -678,38 +694,38 @@ h4 {
   justify-self: center;
   margin-bottom: 2rem; }
   @media only screen and (max-width: 37.5em) {
-    .content-4, .content-5, .content-6, .content-7, .content-8, .content-9 {
+    .content-5, .content-6, .content-7, .content-8, .content-9 {
       height: 430px; } }
-  .content-4:hover, .content-5:hover, .content-6:hover, .content-7:hover, .content-8:hover, .content-9:hover {
+  .content-5:hover, .content-6:hover, .content-7:hover, .content-8:hover, .content-9:hover {
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4); }
-  .content-4__text, .content-5__text, .content-6__text, .content-7__text, .content-8__text, .content-9__text {
+  .content-5__text, .content-6__text, .content-7__text, .content-8__text, .content-9__text {
     width: 400px;
     height: 70px;
     margin-top: 1.6rem;
     margin-left: 5%; }
     @media only screen and (max-width: 37.5em) {
-      .content-4__text, .content-5__text, .content-6__text, .content-7__text, .content-8__text, .content-9__text {
+      .content-5__text, .content-6__text, .content-7__text, .content-8__text, .content-9__text {
         width: 300px; } }
-    .content-4__text p, .content-5__text p, .content-6__text p, .content-7__text p, .content-8__text p, .content-9__text p {
+    .content-5__text p, .content-6__text p, .content-7__text p, .content-8__text p, .content-9__text p {
       line-height: 2.2rem;
       padding-right: 1rem; }
-    .content-4__text h2, .content-5__text h2, .content-6__text h2, .content-7__text h2, .content-8__text h2, .content-9__text h2 {
+    .content-5__text h2, .content-6__text h2, .content-7__text h2, .content-8__text h2, .content-9__text h2 {
       text-align: center;
       text-transform: uppercase;
       color: #368cbf; }
-  .content-4 img, .content-5 img, .content-6 img, .content-7 img, .content-8 img, .content-9 img {
+  .content-5 img, .content-6 img, .content-7 img, .content-8 img, .content-9 img {
     width: 80%;
     height: auto;
     margin-left: 10%;
     margin-top: 3rem;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
     transition: all .5s ease; }
-    .content-4 img:hover, .content-5 img:hover, .content-6 img:hover, .content-7 img:hover, .content-8 img:hover, .content-9 img:hover {
+    .content-5 img:hover, .content-6 img:hover, .content-7 img:hover, .content-8 img:hover, .content-9 img:hover {
       opacity: 0.8; }
-    .content-4 img:active, .content-5 img:active, .content-6 img:active, .content-7 img:active, .content-8 img:active, .content-9 img:active {
+    .content-5 img:active, .content-6 img:active, .content-7 img:active, .content-8 img:active, .content-9 img:active {
       transform: translateY(2px);
       box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
-  .content-4 a, .content-5 a, .content-6 a, .content-7 a, .content-8 a, .content-9 a {
+  .content-5 a, .content-6 a, .content-7 a, .content-8 a, .content-9 a {
     color: #368cbf;
     text-decoration: none;
     font-weight: bolder; }
@@ -724,10 +740,9 @@ h4 {
   margin-left: 5%; }
 
 .links {
-  grid-row: 3/4;
+  grid-row: 5/6;
   grid-column: 2/3;
   width: 700px;
-  height: 460px;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -740,18 +755,15 @@ h4 {
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 62.5em) {
     .links {
-      width: 600px;
-      height: 400px; } }
+      width: 600px; } }
   @media only screen and (max-width: 37.5em) {
     .links {
       justify-content: center;
-      width: 400px;
-      height: 670px; } }
+      width: 400px; } }
   @media only screen and (max-width: 28em) {
     .links {
       justify-content: center;
-      width: 350px;
-      height: 670px; } }
+      width: 350px; } }
   .links__text {
     margin-bottom: 3rem;
     margin-top: 2rem;
