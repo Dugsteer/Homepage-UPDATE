@@ -4,6 +4,7 @@ const blue = window.matchMedia("(max-width: 800px)");
 const changePic = document.getElementById('ghostly');
 const loader = document.getElementById("loaderDiv");
 const jiggly = document.getElementById('imageCard');
+const imageText = document.getElementById('imageText');
 
 //Show ABOUT info
 const extra = document.getElementById('info');
@@ -25,6 +26,15 @@ function picChanger(){
   changePic.innerHTML === '<img src="img/london.png" alt="">' ? changePic.innerHTML = '<img src="img/newyork.png" alt="">' :  changePic.innerHTML ='<img src="img/london.png" alt="">'
 }
 
+const imageTextChange = ()=> {
+  setTimeout(()=>{
+    imageText.style.fontWeight = "bold";
+    imageText.style.color = "#98488b";
+    imageText.innerHTML = "ACTIVATED!"
+  }, 10000)
+}
+
+imageTextChange();
 
 //Christmas Countdown
 // const countdown = document.getElementById('countdown');
@@ -60,7 +70,7 @@ function jiggleYou(){
 
 
 function playHorn(){
-  const beep = new Audio("sounds/bus-horn.mp3");
+  const beep = new Audio("sounds/applause_clapping_w_cheers.mp3");
   beep.play();
 }
 
