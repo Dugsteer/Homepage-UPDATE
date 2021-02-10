@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 2/3;
   align-content: center;
   justify-content: center;
@@ -24,6 +24,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 430px;
+  height: 430px;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+
+  .content-4, .content-5, .content-6, .content-7, .content-8, .content-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   box-shadow: $box-shadow-small;
   border-radius: 5px;
   background-color: #fff;
@@ -35,8 +47,8 @@
 
   
 
-  @media only screen and (max-width: $bp-small){
-    height: 430px;
+  @media only screen and (max-width: $bp-medium){
+    height: auto;
   }
 
   &:hover {
@@ -46,8 +58,7 @@
 
   &__text {
     width: 400px;
-    height: 70px;
-    margin-top: 1.6rem;
+    margin: 1.6rem;
     margin-left: 5%;
 
     @media only screen and (max-width:$bp-small){
@@ -94,14 +105,20 @@
 
 }
 
+.content-4 img{
+  width: 48%;
+  margin-left: 25%;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.6);
+}
+
 .content-6 img {
   width: 70%;
   margin-left: 15%;
 }
 .content-8 img,
 .content-9 img {
-  width: 90%;
-  margin-left: 5%;
+  width: 85%;
+  margin-left: 7.5%;
 
 }
 

@@ -4,6 +4,7 @@ const blue = window.matchMedia("(max-width: 800px)");
 const changePic = document.getElementById('ghostly');
 const loader = document.getElementById("loaderDiv");
 const jiggly = document.getElementById('imageCard');
+const imageText = document.getElementById('imageText');
 
 //Show ABOUT info
 const extra = document.getElementById('info');
@@ -25,17 +26,26 @@ function picChanger(){
   changePic.innerHTML === '<img src="img/london.png" alt="">' ? changePic.innerHTML = '<img src="img/newyork.png" alt="">' :  changePic.innerHTML ='<img src="img/london.png" alt="">'
 }
 
+const imageTextChange = ()=> {
+  setTimeout(()=>{
+    imageText.style.fontWeight = "bold";
+    imageText.style.color = "#98488b";
+    imageText.innerHTML = "ACTIVATED!"
+  }, 10000)
+}
+
+imageTextChange();
 
 //Christmas Countdown
-const countdown = document.getElementById('countdown');
-today=new Date();
-var cmas=new Date(today.getFullYear(), 11, 25);
-if (today.getMonth()==11 && today.getDate()>25) 
-{
-cmas.setFullYear(cmas.getFullYear()+1); 
-}  
-var one_day=1000*60*60*24;
-countdown.innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)));
+// const countdown = document.getElementById('countdown');
+// today=new Date();
+// var cmas=new Date(today.getFullYear(), 11, 25);
+// if (today.getMonth()==11 && today.getDate()>25) 
+// {
+// cmas.setFullYear(cmas.getFullYear()+1); 
+// }  
+// var one_day=1000*60*60*24;
+// countdown.innerHTML = (Math.ceil((cmas.getTime()-today.getTime())/(one_day)));
 
 //Jiggle the imagecard
 
@@ -60,7 +70,7 @@ function jiggleYou(){
 
 
 function playHorn(){
-  const beep = new Audio("sounds/bus-horn.mp3");
+  const beep = new Audio("sounds/applause_clapping_w_cheers.mp3");
   beep.play();
 }
 
