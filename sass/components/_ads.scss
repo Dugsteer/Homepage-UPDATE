@@ -1,9 +1,24 @@
 .sense {
-    grid-row: 1/2;
-    grid-column: 2/3;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
 }
 
-.sense-bottom{
+.sense-bottom {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  @media only screen and (max-width: 37.5em) {
     grid-row: 4/5;
-    grid-column: 2/3;
+    grid-column: 1/2;
+    
+  }
 }
