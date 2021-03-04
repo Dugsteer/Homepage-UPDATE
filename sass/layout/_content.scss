@@ -7,19 +7,22 @@
   grid-template-rows: 500px 480px 480px;
   grid-template-columns: 470px 470px;
 
-  @media only screen and (max-width: $bp-large){
+  @media only screen and (max-width: $bp-large) {
     grid-template-columns: 450px;
     grid-template-rows: repeat(6, 500px);
   }
-  @media only screen and (max-width: $bp-small){
+  @media only screen and (max-width: $bp-small) {
     grid-template-columns: 350px;
     grid-template-rows: repeat(6, 450px);
   }
-
-
 }
 
-.content-4, .content-5, .content-6, .content-7, .content-8, .content-9 {
+.content-4,
+.content-5,
+.content-6,
+.content-7,
+.content-8,
+.content-9 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +34,12 @@
   margin-bottom: 2rem;
 }
 
-  .content-4, .content-5, .content-6, .content-7, .content-8, .content-9 {
+.content-4,
+.content-5,
+.content-6,
+.content-7,
+.content-8,
+.content-9 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,26 +53,23 @@
   justify-self: center;
   margin-bottom: 2rem;
 
-  
-
-  @media only screen and (max-width: $bp-medium){
+  @media only screen and (max-width: $bp-medium) {
     height: auto;
   }
 
   &:hover {
-    box-shadow:2px 2px 5px 4px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4);
   }
-
 
   &__text {
     width: 400px;
     margin: 1.6rem;
     margin-left: 5%;
 
-    @media only screen and (max-width:$bp-small){
+    @media only screen and (max-width: $bp-small) {
       width: 300px;
     }
- 
+
     & p {
       line-height: 2.2rem;
       padding-right: 1rem;
@@ -75,16 +80,15 @@
       text-transform: uppercase;
       color: $color-blue;
     }
-
   }
 
   & img {
-  width: 80%;
+    width: 80%;
     height: auto;
     margin-left: 10%;
     margin-top: 3rem;
     box-shadow: $box-shadow-large;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 
     &:hover {
       opacity: 0.8;
@@ -97,32 +101,22 @@
   }
 
   & a {
-    color:$color-blue;
+    color: $color-blue;
     text-decoration: none;
     font-weight: bolder;
   }
-
-
 }
-
-.content-4 img{
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.6);
+.content-4 img {
+  width: 50%;
+  margin-left: 25%;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
 }
-
 .content-6 img {
-  width: 90%;
-  margin-left: 5%;
+  width: 70%;
+  margin-left: 15%;
 }
 .content-8 img,
 .content-9 img {
   width: 85%;
   margin-left: 7.5%;
-
 }
-
-
-
-
-
