@@ -592,7 +592,6 @@ h4 {
   left: 62px;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   transform: rotate(-20deg);
-  background-color: #7ebc59;
   cursor: pointer; }
   .imagediv h2 {
     color: #fff;
@@ -605,20 +604,13 @@ h4 {
   .imagediv p {
     color: #fff;
     font-size: 2rem; }
+  .imagediv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   @media only screen and (max-width: 50em) {
     .imagediv {
       display: none; } }
-
-.loaderBar {
-  display: block;
-  background-color: white;
-  border-radius: 50px;
-  width: 180px;
-  height: 15px;
-  left: 0;
-  margin-bottom: 1.5rem;
-  transform-origin: left;
-  animation: loading 10s linear forwards; }
 
 @keyframes loading {
   from {
