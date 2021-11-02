@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: 2/3;
+  grid-row: 1/2;
   grid-column: 2/3;
   width: 800px;
   height: 600px;
@@ -147,13 +147,14 @@
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 190px;
+  height: auto;
   z-index: 10;
   top: 50px;
   left: 62px;
   box-shadow: $box-shadow-large;
   transform: rotate(-20deg);
   cursor: pointer;
+  background-color:$color-light-grey;
 
 
 & h2 {

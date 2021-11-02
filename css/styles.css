@@ -67,7 +67,7 @@ h4 {
   margin-bottom: 0.7rem; }
 
 .sense {
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 2/3;
   width: 100%;
   padding: 1rem 2rem; }
@@ -478,7 +478,7 @@ h4 {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row: 2/3;
+  grid-row: 1/2;
   grid-column: 2/3;
   width: 800px;
   height: 600px;
@@ -587,13 +587,14 @@ h4 {
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 190px;
+  height: auto;
   z-index: 10;
   top: 50px;
   left: 62px;
   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
   transform: rotate(-20deg);
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #eaeaea; }
   .imagediv h2 {
     color: #fff;
     font-family: Montserrat, sans-serif;
@@ -824,22 +825,25 @@ h4 {
     font-weight: bolder; }
 
 .content-4 img {
-  width: 40%;
-  margin-left: 30%;
+  width: 45%;
+  margin-left: 27.5%;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6); }
 
 .content-6 img {
-  width: 40%;
-  margin-left: 30%; }
+  width: 45%;
+  margin-left: 27.5%; }
 
 .content-5 img {
-  width: 65%;
+  width: 45%;
+  margin-left: 27.5%; }
+
+.content-8 img {
+  width: 70%;
   margin-left: 15%; }
 
-.content-8 img,
 .content-9 img {
-  width: 85%;
-  margin-left: 7.5%; }
+  width: 75%;
+  margin-left: 12.5%; }
 
 .links {
   grid-row: 5/6;
