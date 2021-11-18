@@ -10,15 +10,14 @@
   transition: all 0.2s ease-in-out;
 
   @media only screen and (max-width: $bp-medium) {
-    position: absolute;
     width: 100vw;
     z-index: 500;
     height: 100%;
     padding: 3rem;
+    margin-top: 2rem;
   }
   @media only screen and (max-width: $bp-smallest) {
-    width: 100vw;
-    padding: 6rem;
+    width: 300px;
   }
 }
 .sidebar h2:first-of-type {

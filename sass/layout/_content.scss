@@ -8,31 +8,15 @@
   grid-template-columns: 470px 470px;
 
   @media only screen and (max-width: $bp-large) {
-    grid-template-columns: 450px;
-    grid-template-rows: repeat(6, 500px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  @media only screen and (max-width: $bp-small) {
-    grid-template-columns: 350px;
-    grid-template-rows: repeat(6, 450px);
-  }
+
 }
 
-.content-4,
-.content-5,
-.content-6,
-.content-7,
-.content-8,
-.content-9 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 430px;
-  height: 430px;
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 2rem;
-}
 
 .content-4,
 .content-5,
@@ -53,7 +37,8 @@
   justify-self: center;
   margin-bottom: 2rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
+    width: 300px;
     height: auto;
   }
 
@@ -67,7 +52,7 @@
     margin-left: 5%;
 
     @media only screen and (max-width: $bp-small) {
-      width: 300px;
+      width: 280px;
     }
 
     & p {

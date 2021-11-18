@@ -73,9 +73,11 @@ h4 {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense {
+      width: 90%;
       grid-row: 1/2; } }
 
 .sense1 {
@@ -90,6 +92,7 @@ h4 {
   background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense1 {
+      width: 90%;
       grid-row: 1/2; } }
 
 .mainpage_top {
@@ -103,12 +106,12 @@ h4 {
     .mainpage_top {
       grid-row: 2/3;
       justify-content: center;
-      width: 400px;
+      width: 300px;
       height: 60px;
       flex-direction: column; } }
   @media only screen and (max-width: bp-smallest) {
     .mainpage_top {
-      width: 360px;
+      width: 300px;
       height: 60px; } }
 
 .sense-bottom {
@@ -118,9 +121,11 @@ h4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 320px;
-  height: auto; }
+  height: auto;
+  background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense-bottom {
+      width: 90%;
       grid-row: 5/6; } }
 
 @media (min-width: 600px) {
@@ -224,15 +229,14 @@ h4 {
   transition: all 0.2s ease-in-out; }
   @media only screen and (max-width: 50em) {
     .sidebar {
-      position: absolute;
       width: 100vw;
       z-index: 500;
       height: 100%;
-      padding: 3rem; } }
+      padding: 3rem;
+      margin-top: 2rem; } }
   @media only screen and (max-width: 28em) {
     .sidebar {
-      width: 100vw;
-      padding: 6rem; } }
+      width: 300px; } }
 
 .sidebar h2:first-of-type {
   margin-top: 3rem; }
@@ -532,16 +536,12 @@ h4 {
     fill: #7ebc59; }
 
 .introduction {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row: 2/3;
   grid-column: 2/3;
   width: 800px;
-  height: 600px;
   background-color: #fff;
-  align-self: center;
-  justify-self: center;
   justify-items: center;
   align-items: center;
   margin: 4rem 0;
@@ -550,23 +550,20 @@ h4 {
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 62.5em) {
     .introduction {
-      width: 700px;
-      height: 550px; } }
+      width: 700px; } }
   @media only screen and (max-width: 50em) {
     .introduction {
-      width: 600px;
-      height: 550px; } }
+      width: 600px; } }
   @media only screen and (max-width: 37.5em) {
     .introduction {
       grid-template-columns: 1fr;
-      width: 350px;
-      height: 450px;
+      width: 300px;
       text-align: center; } }
   @media only screen and (max-width: 28em) {
     .introduction {
+      margin: 2rem 0;
       justify-content: center;
-      width: 350px;
-      height: 470px; } }
+      width: 300px; } }
   .introduction__img {
     grid-column: 1/2;
     width: 390px;
@@ -711,13 +708,8 @@ h4 {
       width: 100vw; } }
   @media only screen and (max-width: 62.5em) {
     .wrapper {
-      grid-template-columns: 28rem 1fr; } }
-  @media only screen and (max-width: 50em) {
-    .wrapper {
-      grid-template-columns: 0 1fr; } }
-  @media only screen and (max-width: 28em) {
-    .wrapper {
-      width: 100vw; } }
+      display: flex;
+      flex-direction: column; } }
 
 .jiggle {
   animation: jiggler 1s infinite; }
@@ -754,28 +746,11 @@ h4 {
   grid-template-columns: 470px 470px; }
   @media only screen and (max-width: 62.5em) {
     .content {
-      grid-template-columns: 450px;
-      grid-template-rows: repeat(6, 500px); } }
-  @media only screen and (max-width: 37.5em) {
-    .content {
-      grid-template-columns: 350px;
-      grid-template-rows: repeat(6, 450px); } }
-
-.content-4,
-.content-5,
-.content-6,
-.content-7,
-.content-8,
-.content-9 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 430px;
-  height: 430px;
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 2rem; }
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 .content-4,
 .content-5,
@@ -794,15 +769,15 @@ h4 {
   height: 450px;
   align-self: center;
   justify-self: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem; }
-  @media only screen and (max-width: 50em) {
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 62.5em) {
     .content-4,
     .content-5,
     .content-6,
     .content-7,
     .content-8,
     .content-9 {
+      width: 300px;
       height: auto; } }
   .content-4:hover,
   .content-5:hover,
@@ -827,7 +802,7 @@ h4 {
       .content-7__text,
       .content-8__text,
       .content-9__text {
-        width: 300px; } }
+        width: 280px; } }
     .content-4__text p,
     .content-5__text p,
     .content-6__text p,
@@ -910,7 +885,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: space-between;
-  justify-self: center;
   text-align: center;
   margin: 4rem 0;
   padding: 2rem 0rem;
@@ -927,7 +901,8 @@ h4 {
   @media only screen and (max-width: 28em) {
     .links {
       justify-content: center;
-      width: 350px; } }
+      margin: 1rem;
+      width: 300px; } }
   .links__text {
     margin-bottom: 3rem;
     margin-top: 2rem;
