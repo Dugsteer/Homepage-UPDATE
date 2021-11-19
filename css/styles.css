@@ -73,8 +73,7 @@ h4 {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 2rem;
-  background-color: red; }
+  margin-top: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .sense {
       width: 90%;
@@ -88,8 +87,7 @@ h4 {
   justify-content: center;
   margin: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: red; }
+  margin-bottom: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .sense1 {
       width: 90%;
@@ -121,8 +119,7 @@ h4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 320px;
-  height: auto;
-  background-color: red; }
+  height: auto; }
   @media only screen and (max-width: 37.5em) {
     .sense-bottom {
       width: 90%;
@@ -148,75 +145,6 @@ h4 {
     width: 800px;
     height: auto; } }
 
-.loader-div {
-  background-color: #368cbf;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  height: 100vh;
-  width: 1200px;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; }
-  @media only screen and (max-width: 75em) {
-    .loader-div {
-      width: 100vw; } }
-  @media only screen and (max-width: 28em) {
-    .loader-div {
-      width: 100vw; } }
-
-.stop {
-  animation: 2s opaque forwards; }
-
-@keyframes opaque {
-  0% {
-    opacity: 1;
-    z-index: 100; }
-  100% {
-    opacity: 0;
-    z-index: -1; } }
-
-.loader-container {
-  width: 300px;
-  height: 340px; }
-  .loader-container img {
-    height: 100%;
-    width: 100%; }
-
-.ghost {
-  animation: float 3s ease-out infinite; }
-
-@keyframes float {
-  50% {
-    transform: translate(0, 20px); } }
-
-.shadowFrame {
-  width: 130px;
-  margin: auto;
-  margin-top: 25px; }
-
-.shadow {
-  animation: shrink 3s ease-out infinite;
-  transform-origin: center center; }
-
-.shadow ellipse {
-  transform-origin: center center; }
-
-@keyframes shrink {
-  0% {
-    width: 90%;
-    margin: 0 5%; }
-  50% {
-    width: 60%;
-    margin: 0 18%; }
-  100% {
-    width: 90%;
-    margin: 0 5%; } }
-
 .sidebar {
   grid-row: 1/7;
   grid-column: 1/2;
@@ -227,7 +155,7 @@ h4 {
   background-color: #fff;
   padding: 1rem;
   transition: all 0.2s ease-in-out; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .sidebar {
       position: absolute;
       top: 0px;
@@ -328,7 +256,7 @@ h4 {
   grid-row: 1/7;
   grid-column: 1/2;
   height: 100%; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .sidebar-container {
       display: none; } }
 
@@ -710,6 +638,7 @@ h4 {
       width: 100vw; } }
   @media only screen and (max-width: 62.5em) {
     .wrapper {
+      width: 100vw;
       display: flex;
       flex-direction: column; } }
 
@@ -772,6 +701,24 @@ h4 {
   align-self: center;
   justify-self: center;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 62.5em) {
+    .content-4,
+    .content-5,
+    .content-6,
+    .content-7,
+    .content-8,
+    .content-9 {
+      width: 320px;
+      height: auto; } }
+  @media only screen and (max-width: 62.5em) {
+    .content-4,
+    .content-5,
+    .content-6,
+    .content-7,
+    .content-8,
+    .content-9 {
+      width: 300px;
+      height: auto; } }
   @media only screen and (max-width: 50em) {
     .content-4,
     .content-5,
@@ -789,17 +736,8 @@ h4 {
     .content-8,
     .content-9 {
       grid-template-columns: 1fr;
-      width: 400px;
-      text-align: center; } }
-  @media only screen and (max-width: 62.5em) {
-    .content-4,
-    .content-5,
-    .content-6,
-    .content-7,
-    .content-8,
-    .content-9 {
       width: 300px;
-      height: auto; } }
+      text-align: center; } }
   .content-4:hover,
   .content-5:hover,
   .content-6:hover,
@@ -816,6 +754,14 @@ h4 {
     width: 400px;
     margin: 1.6rem;
     margin-left: 5%; }
+    @media only screen and (max-width: 62.5em) {
+      .content-4__text,
+      .content-5__text,
+      .content-6__text,
+      .content-7__text,
+      .content-8__text,
+      .content-9__text {
+        width: 320px; } }
     @media only screen and (max-width: 37.5em) {
       .content-4__text,
       .content-5__text,
@@ -847,12 +793,19 @@ h4 {
   .content-7 img,
   .content-8 img,
   .content-9 img {
-    width: 80%;
+    width: 300px;
     height: auto;
-    margin-left: 10%;
     margin-top: 3rem;
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
     transition: all 0.5s ease; }
+    @media only screen and (max-width: 62.5em) {
+      .content-4 img,
+      .content-5 img,
+      .content-6 img,
+      .content-7 img,
+      .content-8 img,
+      .content-9 img {
+        width: 200px; } }
     .content-4 img:hover,
     .content-5 img:hover,
     .content-6 img:hover,
@@ -878,26 +831,15 @@ h4 {
     text-decoration: none;
     font-weight: bolder; }
 
-.content-4 img {
-  width: 45%;
-  margin-left: 27.5%;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6); }
-
-.content-6 img {
-  width: 45%;
-  margin-left: 27.5%; }
-
+.content-4 img,
+.content-6 img,
 .content-5 img {
-  width: 45%;
-  margin-left: 27.5%; }
-
-.content-8 img {
-  width: 70%;
-  margin-left: 15%; }
-
-.content-9 img {
-  width: 75%;
-  margin-left: 12.5%; }
+  width: 200px; }
+  @media only screen and (max-width: 62.5em) {
+    .content-4 img,
+    .content-6 img,
+    .content-5 img {
+      width: 120px; } }
 
 .links {
   grid-row: 5/6;
@@ -907,7 +849,8 @@ h4 {
   flex-direction: column;
   align-items: space-between;
   text-align: center;
-  margin: 4rem 0;
+  margin: auto;
+  margin-bottom: 4px;
   padding: 2rem 0rem;
   background-color: #faebaf;
   justify-content: flex-start;

@@ -2,7 +2,7 @@ const menu = document.getElementById("menu");
 const sidey = document.getElementById("sidebar");
 const blue = window.matchMedia("(max-width: 800px)");
 const changePic = document.getElementById("ghostly");
-const loader = document.getElementById("loaderDiv");
+// const loader = document.getElementById("loaderDiv");
 const jiggly = document.getElementById("imageCard");
 const imageText = document.getElementById("imageText");
 
@@ -86,16 +86,16 @@ function checkForTop() {
 
 checkForTop();
 
-function stopLoader() {
-  loader.classList.add("stop");
-}
+// function stopLoader() {
+//   loader.classList.add("stop");
+// }
 
-function startLoader() {
-  loader.classList.remove("stop");
-  setTimeout(stopLoader, 1000);
-}
+// function startLoader() {
+//   loader.classList.remove("stop");
+//   setTimeout(stopLoader, 1000);
+// }
 
-setTimeout(stopLoader, 1000);
+// setTimeout(stopLoader, 1000);
 
 function myFunction(x) {
   if (blue.matches) {
