@@ -708,16 +708,7 @@ h4 {
     .content-7,
     .content-8,
     .content-9 {
-      width: 320px;
-      height: auto; } }
-  @media only screen and (max-width: 62.5em) {
-    .content-4,
-    .content-5,
-    .content-6,
-    .content-7,
-    .content-8,
-    .content-9 {
-      width: 300px;
+      width: 340px;
       height: auto; } }
   @media only screen and (max-width: 50em) {
     .content-4,
@@ -726,7 +717,7 @@ h4 {
     .content-7,
     .content-8,
     .content-9 {
-      width: 400px;
+      width: 340px;
       align-content: center; } }
   @media only screen and (max-width: 37.5em) {
     .content-4,
