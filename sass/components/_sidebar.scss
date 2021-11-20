@@ -9,17 +9,16 @@
   padding: 1rem;
   transition: all 0.2s ease-in-out;
 
-  @media only screen and (max-width: $bp-medium) {
-    position: absolute;
-    width: 100vw;
-    z-index: 500;
+  @media only screen and (max-width: $bp-large) {
+position: absolute;  
+top: 0px;
+left: 0px;
+width: 100vw;
+  z-index: 500;
     height: 100%;
     padding: 3rem;
   }
-  @media only screen and (max-width: $bp-smallest) {
-    width: 100vw;
-    padding: 6rem;
-  }
+
 }
 .sidebar h2:first-of-type {
   margin-top: 3rem;
@@ -124,7 +123,7 @@
   grid-column: 1/2;
   height: 100%;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     display: none;
   }
 }
