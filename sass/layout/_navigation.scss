@@ -39,14 +39,14 @@
   }
 
   &__link{
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       grid-column: 4/5;
   
     }
 
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     grid-template-columns: 5vw 18vw 1fr 18vw 5vw;
   }
 
@@ -57,7 +57,7 @@
     font-size: 1.6rem;
 
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       display: none;
     }
     @media only screen and (max-width: $bp-small) {
@@ -77,7 +77,7 @@
       height: 7rem;
       font-size: 2.4rem;
 
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-large) {
         font-size: 2rem;
       }
 
@@ -131,7 +131,7 @@
 
     &.link2,
     &.link3 {
-      @media only screen and (max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-large) {
         display: none;
       }
     }
@@ -148,7 +148,7 @@
   cursor: pointer;
   display: none;
 
-  @media only screen and (max-width: $bp-medium){
+  @media only screen and (max-width: $bp-large){
     display: block;
   }
 
