@@ -7,15 +7,16 @@
   background-color: #fff;
   padding: 1rem;
 
-//   @media only screen and (max-width: $bp-large) {
-// position: absolute;  
-// top: 0px;
-// left: 0px;
-// width: 100vw;
-//   z-index: 500;
-//     height: 100%;
-//     padding: 3rem;
-//   }
+  @media only screen and (max-width: $bp-large) {
+position: absolute;  
+top: 0px;
+left: 0px;
+width: 100vw;
+  z-index: 500;
+    height: 100%;
+    padding: 3rem;
+  }
+
 
 }
 
