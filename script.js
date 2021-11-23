@@ -1,10 +1,10 @@
 const menu = document.getElementById("menu");
 const sidey = document.getElementById("sidebar");
 const blue = window.matchMedia("(max-width: 800px)");
-const changePic = document.getElementById("ghostly");
+// const changePic = document.getElementById("ghostly");
 // const loader = document.getElementById("loaderDiv");
-const jiggly = document.getElementById("imageCard");
-const imageText = document.getElementById("imageText");
+// const jiggly = document.getElementById("imageCard");
+// const imageText = document.getElementById("imageText");
 
 //Show ABOUT info
 const extra = document.getElementById("info");
@@ -19,27 +19,27 @@ function unshow() {
 
 //Change main pic
 
-setInterval(picChanger, 5000);
-picChanger();
+// setInterval(picChanger, 5000);
+// picChanger();
 
-function picChanger() {
-  changePic.innerHTML ===
-  '<img src="img/london.png" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">'
-    ? (changePic.innerHTML =
-        '<img src="img/newyork.png" alt="New York, a Super City to Practise English" title="New York, where you can learn to speak great English">')
-    : (changePic.innerHTML =
-        '<img src="img/london.png" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">');
-}
+// function picChanger() {
+//   changePic.innerHTML ===
+//   '<img src="img/london.png" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">'
+//     ? (changePic.innerHTML =
+//         '<img src="img/newyork.png" alt="New York, a Super City to Practise English" title="New York, where you can learn to speak great English">')
+//     : (changePic.innerHTML =
+//         '<img src="img/london.png" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">');
+// }
 
-const imageTextChange = () => {
-  setTimeout(() => {
-    imageText.style.fontWeight = "bold";
-    imageText.style.color = "#98488b";
-    imageText.innerHTML = "ACTIVATED!";
-  }, 10000);
-};
+// const imageTextChange = () => {
+//   setTimeout(() => {
+//     imageText.style.fontWeight = "bold";
+//     imageText.style.color = "#98488b";
+//     imageText.innerHTML = "ACTIVATED!";
+//   }, 10000);
+// };
 
-imageTextChange();
+// imageTextChange();
 
 //Christmas Countdown
 // const countdown = document.getElementById('countdown');
@@ -54,37 +54,37 @@ imageTextChange();
 
 //Jiggle the imagecard
 
-setInterval(jiggleMe, 15000);
+// setInterval(jiggleMe, 15000);
 
-jiggleMe();
-jiggleYou();
+// jiggleMe();
+// jiggleYou();
 
-function jiggleMe() {
-  setTimeout(jiggleYou, 500);
-}
+// function jiggleMe() {
+//   setTimeout(jiggleYou, 500);
+// }
 
-function removeJiggle() {
-  jiggly.classList.remove("jiggle");
-}
+// function removeJiggle() {
+//   jiggly.classList.remove("jiggle");
+// }
 
-function jiggleYou() {
-  jiggly.classList.add("jiggle");
-  setTimeout(removeJiggle, 2000);
-}
+// function jiggleYou() {
+//   jiggly.classList.add("jiggle");
+//   setTimeout(removeJiggle, 2000);
+// }
 
-function playHorn() {
-  const beep = new Audio("sounds/applause_clapping_w_cheers.mp3");
-  beep.play();
-}
+// function playHorn() {
+//   const beep = new Audio("sounds/applause_clapping_w_cheers.mp3");
+//   beep.play();
+// }
 
-jiggly.addEventListener("click", playHorn);
+// jiggly.addEventListener("click", playHorn);
 
 //check for top of window
-function checkForTop() {
-  loader.style.top = window.pageYOffset + "px";
-}
+// function checkForTop() {
+//   loader.style.top = window.pageYOffset + "px";
+// }
 
-checkForTop();
+// checkForTop();
 
 function myFunction(x) {
   if (blue.matches) {

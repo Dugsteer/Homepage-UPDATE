@@ -18,46 +18,46 @@
 
 <body>
 
-<div class="social">
-  <div class="social-item">
-      <a href="#" 
-  onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u=https://esl-ology.com', 
-      'facebook-share-dialog', 
-      'width=626,height=436'); 
-    return false;">
-      <img src="img/social/facebook.webp" src="img/social/facebook.png">
-      </a>
-  </div>
-  <div class="social-item">
-          <a href="#" 
-  onclick="
-    window.open(
-'https://pinterest.com/pin/create/button/?url=http://esl-ology.com&media=https://esl-ology.com/img/london.png&description=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
-     'pinterest-share-dialog', 
-      'width=626,height=436'); 
-    return false;">
-  <img src="img/social/pinterest.webp" src="img/social/pinterest.png">
-          </a>
-  </div>
-  <div class="social-item">
-          <a href="#" 
-  onclick="
-    window.open(
-'https://twitter.com/intent/tweet?url=http://esl-ology.com&text=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
-     'twitter-share-dialog', 
-      'width=626,height=436'); 
-    return false;">
-  <img src="img/social/twitter.webp" src="img/social/twitter.png">
-          </a>
-  </div>
+      <div class="social">
+        <div class="social-item">
+            <a href="#" 
+        onclick="
+          window.open(
+            'https://www.facebook.com/sharer/sharer.php?u=https://esl-ology.com', 
+            'facebook-share-dialog', 
+            'width=626,height=436'); 
+          return false;">
+            <img src="img/social/facebook.webp">
+            </a>
+        </div>
+        <div class="social-item">
+                <a href="#" 
+        onclick="
+          window.open(
+          'https://pinterest.com/pin/create/button/?url=http://esl-ology.com&media=https://esl-ology.com/img/london.png&description=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+              'pinterest-share-dialog', 
+                'width=626,height=436'); 
+              return false;">
+            <img src="img/social/pinterest.webp">
+                    </a>
+            </div>
+            <div class="social-item">
+                    <a href="#" 
+            onclick="
+              window.open(
+          'https://twitter.com/intent/tweet?url=http://esl-ology.com&text=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+              'twitter-share-dialog', 
+                'width=626,height=436'); 
+              return false;">
+            <img src="img/social/twitter.webp">
+                    </a>
+            </div>
 
-  <div class="social-item">
-      <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA" target="_blank">
-  <img src="img/social/youtube.webp" src="img/social/youtube.png"></a>
-  </div>
-</div>
+            <div class="social-item">
+                <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA" target="_blank">
+            <img src="img/social/youtube.webp"></a>
+            </div>
+      </div>
 
 
 
@@ -89,18 +89,18 @@
       </div>
 
 
-<div class="sense">
-</style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
-<!-- mainpage_top -->
-<ins class="adsbygoogle mainpage_top"
-     style="display:inline-block"
-     data-ad-client="ca-pub-6192312197226967"
-     data-ad-slot="3393588944"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+    <div class="sense">
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
+    <!-- mainpage_top -->
+    <ins class="adsbygoogle mainpage_top"
+        style="display:inline-block"
+        data-ad-client="ca-pub-6192312197226967"
+        data-ad-slot="3393588944"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
 
      
         
@@ -108,17 +108,17 @@
     
 
         <div class="introduction">
-          <div class="imagediv" id="imageCard">
+          <!-- <div class="imagediv" id="imageCard"> -->
             <!-- <h2>2021</h2> -->
             <!-- <div class="loaderBar" id="loaderBar"></div> -->
             <!-- <p id="imageText">loading...</p> -->
-            <img src="img/londonbus.webp" src="img/old/londonbus.png" alt="London Bus">
+            <!-- <img src="img/londonbus.webp" alt="London Bus"> -->
             <!-- <div class="countdown">
                 <h3 id="countdown">10</h3>
                 <p></p>days to go!</p></div> -->
-          </div>
+          <!-- </div> -->
           <div class="introduction__img" id="ghostly">
-            <img src="img/london.webp" src="img/london.png" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">
+            <img src="img/london.webp" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">
           </div>
           <div class="introduction__text">
             <h1>ESL-Ology.com <br> TOOLS FOR TEFL
@@ -129,21 +129,21 @@
 
   </div>
 
-</div>
+  </div>
 
 
 
 
 
 
-<div class="content">
+  <div class="content">
 
 
   <div class="content-6">
     <figure class="content-6__img">
-      <a href="text-maze.html"><img
+      <a href="text-maze.php"><img
         src="./img/JobsGoFish.webp"
-        src="./img/JobsGoFish.png"
+
         alt="A picture of a Go Fish card game"
         title="English jobs vocabulary cards"
         class="content__img"
@@ -154,8 +154,8 @@
     <div class="content-6__text">
       <h2 class= "content-title">GO FISH CARDS</h2>
       <p class="content-1__text">
-        Print out and play a game of <a href="text-maze.html">Jobs Go Fish cards</a>. 
-        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze.html">Word Search</a> too!
+        Print out and play a game of <a href="text-maze.php">Jobs Go Fish cards</a>. 
+        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze.php">Word Search</a> too!
       </p>
     </div>
   </div>
@@ -164,7 +164,6 @@
     <figure class="content-4__img">
       <a href="bingo-daily-activity.html"><img
         src="./img/DailyRoutineBingo.webp"
-        src="./img/DailyRoutineBingo.png"
         alt="A picture of bingo cards "
         title="Practise English Vehicles Vocabulary with a Text Maze"
         class="content__img"
@@ -174,7 +173,7 @@
  <div class="content-6__text">
       <h2 class= "content-title">Bingo Cards</h2>
       <p class="content-1__text">
-Have fun printing out random bingo cards for a variety of topics. Use the online bingo caller to call out the answers. Great to end the class.      </p>
+  Have fun printing out random bingo cards for a variety of topics. Use the online bingo caller to call out the answers. Great to end the class.      </p>
     </div>
   </div>
 
@@ -184,7 +183,7 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
 
  <div class="content-5">
   <figure class="content-5__img">
-    <a href="boardgame-player.html"><img src="./img/JobBoardGame.webp" src="./img/JobBoardGame.png" alt="Play any boardgame online" title="Practise English Grammar with Great Online Boardgames" class="content__img"/>
+    <a href="boardgame-player.html"><img src="./img/JobBoardGame.webp" alt="Play any boardgame online" title="Practise English Grammar with Great Online Boardgames" class="content__img"/>
     </a>
     </figure>
     <div class="content-5__text">
@@ -193,15 +192,14 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
         Load any ESL teaching boardgame into a window so that students can play online or onscreen. With draggable pieces and die. 
       </p>
     </div>
-</div>
+  </div>
 
 
 
-<div class="content-7">
+  <div class="content-7">
   <figure class="content-7__img">
    <a href="flashcard-animals.html"> <img
     src="img/AnimalFlash.webp"
-      src="img/AnimalFlash.jpg"
       alt="An English Vocabulary Flashcard featuring a Clownfish"
       title="Flashcards are a Great Tool for TEFL for Learning Vocabulary"
       class="content__img"
@@ -214,10 +212,10 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
       A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, either with traditional flashcards or modern 'hover cards', these are available both with images and with photos.
     </p>
   </div>
-</div>
+  </div>
 
 
-<div class="sense1">
+  <div class="sense1">
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967" crossorigin="anonymous"></script>
 <!-- mainpage_top -->
@@ -234,7 +232,6 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
   <figure class="content-8__img">
     <a href="to-be-maze.html"> <img
       src="/img/GrammarMaze.webp"
-      src="/img/GrammarMaze.png"
       alt="A Classic ESL-ology Grammar Maze"
       title="Grammar Mazes Help to Make English Learning Stick!"
       class="content__img"
@@ -251,7 +248,7 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
 
 <div class="content-9">
   <figure class="content-9__img">
-<a href="matching-sports.html"><img src="img/SportMemory.webp" src="img/SportMemory.png" alt="An English Vocabulary Food Matching Game" title="Tools for TEFL - Matching Games Help Reinforce English Learning"></a>
+<a href="matching-sports.html"><img src="img/SportMemory.webp" alt="An English Vocabulary Food Matching Game" title="Tools for TEFL - Matching Games Help Reinforce English Learning"></a>
   </figure>
   <div class="content-8__text">
     <h2 class= "content-title">Card Matching Games</h2>
@@ -286,14 +283,14 @@ Have fun printing out random bingo cards for a variety of topics. Use the online
         </h2>
         <div class="links__images">
           <div class="links__images-1 figure">
-           <a href="text-maze.html">
-            <img src="img/FrequencyAdjectivewTextMaze.webp" src="img/FrequencyAdverbsTextMaze.jpg" alt="frequency adjectives ESL-ology text maze">
+           <a href="text-maze.php">
+            <img src="img/FrequencyAdjectivewTextMaze.webp" alt="frequency adjectives ESL-ology text maze">
            </a>
-              <figcaption>It's great fun doing a challenging <a href="text-maze.html">text maze</a>, a fun alternative to a traditional word search.</figcaption>
+              <figcaption>It's great fun doing a challenging <a href="text-maze.php">text maze</a>, a fun alternative to a traditional word search.</figcaption>
           </div>
           <div class="links__images-1 figure">
-            <a href="text-maze.html">
-            <img src="img/SportsDominoes.webp" src="img/SportsDominoes.jpg"An English Vocabulary Halloween Matching Game" title="Have Some Spooky ESL Fun at Halloween!"></a>
+            <a href="text-maze.php">
+            <img src="img/SportsDominoes.webp" alt="Sports dominoes"></a>
               <figcaption>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</figcaption>
           </div>
       </div>
