@@ -141,7 +141,7 @@
 
   <div class="content-6">
     <figure class="content-6__img">
-      <a href="text-maze.php"><img
+      <a href="text-maze"><img
         src="./img/JobsGoFish.webp"
 
         alt="A picture of a Go Fish card game"
@@ -154,8 +154,8 @@
     <div class="content-6__text">
       <h2 class= "content-title">GO FISH CARDS</h2>
       <p class="content-1__text">
-        Print out and play a game of <a href="text-maze.php">Jobs Go Fish cards</a>. 
-        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze.php">Word Search</a> too!
+        Print out and play a game of <a href="text-maze">Jobs Go Fish cards</a>. 
+        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze">Word Search</a> too!
       </p>
     </div>
   </div>
@@ -283,7 +283,7 @@
         </h2>
         <div class="links__images">
           <div class="links__images-1 figure">
-           <a href="text-maze.php">
+           <a href="text-maze">
             <img src="img/FrequencyAdjectivewTextMaze.webp" alt="frequency adjectives ESL-ology text maze">
            </a>
               <figcaption>It's great fun doing a challenging <a href="text-maze.php">text maze</a>, a fun alternative to a traditional word search.</figcaption>
