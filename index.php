@@ -155,7 +155,7 @@
       <h2 class= "content-title">GO FISH CARDS</h2>
       <p class="content-1__text">
         Print out and play a game of <a href="text-maze">Jobs Go Fish cards</a>. 
-        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze">Word Search</a> too!
+        Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze">Word Search</a>!
       </p>
     </div>
   </div>
@@ -191,6 +191,14 @@
       <p class="content-1__text">
         Load any ESL teaching boardgame into a window so that students can play online or onscreen. With draggable pieces and die. 
       </p>
+    </div>
+    <div class="content__info">
+      <h6 class="content__info-text">Elementary</h6>
+      <h6 class="content__info-time">10mins</h6>
+      <svg class="content__info-icon">
+            <use xlink:href="sprite.svg#downarrow"></use>
+          </svg>
+
     </div>
   </div>
 
@@ -256,6 +264,13 @@
       There are three different sets of cards in each of our matching card games. Turn up two cards and if a picture matches a word, you win them. How fast can you clear the board?
     </p>
   </div>
+    <div class="content__info">
+        <h6 class="content__info-text">Elementary</h6>
+        <h6 class="content__info-time">10mins</h6>
+        <svg class="content__info-icon">
+              <use xlink:href="sprite.svg#laptop"></use>
+            </svg>
+      </div>
 </div>
 
 

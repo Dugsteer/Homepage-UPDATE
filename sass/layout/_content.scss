@@ -4,19 +4,36 @@
   grid-column: 2/3;
   align-content: center;
   justify-content: center;
-  grid-template-rows: 500px 480px auto 480px;
-  grid-template-columns: 470px 470px;
+  // grid-template-rows: auto auto auto auto;
+  grid-template-columns: 450px 450px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-auto-rows: 115px;
+  // grid-auto-flow: row dense;
+  align-items: center;
 
-  @media only screen and (max-width: $bp-large) {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: auto;
+    grid-auto-rows: 105px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
   }
-
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+    grid-auto-rows: 90px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
-
 
 .content-4,
 .content-5,
@@ -25,28 +42,28 @@
 .content-8,
 .content-9 {
   display: flex;
+  grid-row: span 5;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: $box-shadow-small;
-  border-radius: 5px;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
   background-color: #fff;
   width: 430px;
-  height: 450px;
-  align-self: center;
-  justify-self: center;
+  // height: 500px;
+  height: 650px;
   margin-bottom: 2rem;
 
-
-    @media only screen and (max-width: $bp-large) {
-    width: 340px;
+  @media only screen and (max-width: $bp-largest) {
+    width: 380px;
     height: auto;
   }
 
-
   @media only screen and (max-width: $bp-medium) {
-    width: 340px;
- align-content: center;
+    width: 380px;
+    align-content: center;
   }
 
   @media only screen and (max-width: $bp-small) {
@@ -55,17 +72,16 @@
     text-align: center;
   }
 
-
   &:hover {
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4);
   }
 
   &__text {
-    width: 400px;
+    width: 380px;
     margin: 1.6rem;
     margin-left: 5%;
 
-       @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-largest) {
       width: 320px;
     }
 
@@ -86,14 +102,14 @@
   }
 
   & img {
-    width: 300px;
+    width: 350px;
     height: auto;
     margin-top: 3rem;
     box-shadow: $box-shadow-large;
     transition: all 0.5s ease;
 
-     @media only screen and (max-width: $bp-large) {
-      width: 200px;
+    @media only screen and (max-width: $bp-large) {
+      width: 280px;
     }
 
     &:hover {
@@ -111,20 +127,66 @@
     text-decoration: none;
     font-weight: bolder;
   }
-
-
 }
 
+.content-7,
+.content-8,
+.content-9 {
+  grid-row: span 4;
+  height: 500px;
 
-.content-4 img, 
+  @media only screen and (max-width: $bp-large) {
+    width: 380px;
+    height: auto;
+  }
+}
+
+.content-4 img,
 .content-6 img,
-.content-5 img,
- {
-  width: 200px;
-     @media only screen and (max-width: $bp-large) {
-      width: 120px;
-    }
+.content-5 img {
+  width: 300px;
 
+  @media only screen and (max-width: $bp-large) {
+    width: 280px;
+  }
 }
 
+.content-6 {
+  grid-row: 1/6;
+  grid-column: 1/2;
+}
 
+.content-4 {
+  grid-row: 1/6;
+  grid-column: 2/3;
+}
+
+.content {
+  &__info {
+    color: $color-white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    padding: 5px 12px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: $color-blue;
+    &-text {
+      font-size: 1.4rem;
+      width: 40%;
+    }
+    &-time {
+      font-size: 1.4rem;
+      width: 40%;
+    }
+    &-icon {
+      border-radius: 1000%;
+      background-color: $color-green;
+      height: 35px;
+      width: 35px;
+      padding: 5px;
+    }
+  }
+}

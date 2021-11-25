@@ -17,7 +17,10 @@
       width: 100vw;
     }
 
-    @media only screen and (max-width:$bp-large){
+
+
+
+    @media only screen and (max-width:1026px){
       width:  100vw;
       display: flex;
       flex-direction: column;

@@ -7,7 +7,7 @@
   background-color: #fff;
   padding: 1rem;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: 1026px) {
 position: absolute;  
 top: 0px;
 left: 0px;
@@ -25,7 +25,7 @@ width: 100vw;
   grid-column: 1/2;
   height: 100%;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: 1025px) {
     display: none;
   }
 }
@@ -40,6 +40,11 @@ width: 100vw;
     background-color: white;
     height: 100%;
     width: 23rem;
+
+  @media only screen and (max-width: 1025px) {
+    display: none;
+  }
+
 }
 
 

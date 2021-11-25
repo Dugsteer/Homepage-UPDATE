@@ -131,7 +131,7 @@
 
     &.link2,
     &.link3 {
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: 1026px) {
         display: none;
       }
     }
@@ -149,6 +149,9 @@
   display: none;
 
   @media only screen and (max-width: $bp-large){
+    display: block;
+  }
+  @media only screen and (max-width: 1026px){
     display: block;
   }
 
