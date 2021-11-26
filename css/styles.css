@@ -73,7 +73,8 @@ h4 {
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense {
       width: 90%;
@@ -87,7 +88,8 @@ h4 {
   justify-content: center;
   margin: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense1 {
       width: 90%;
@@ -119,7 +121,8 @@ h4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 320px;
-  height: auto; }
+  height: auto;
+  background-color: red; }
   @media only screen and (max-width: 37.5em) {
     .sense-bottom {
       width: 90%;
@@ -682,21 +685,22 @@ h4 {
   display: grid;
   grid-row: 3/4;
   grid-column: 2/3;
-  align-content: center;
   justify-content: center;
   grid-template-columns: 450px 450px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-auto-rows: 115px;
+  grid-auto-rows: 120px;
+  grid-auto-flow: dense;
   align-items: center; }
   @media only screen and (max-width: 75em) {
     .content {
       grid-template-columns: auto;
-      grid-auto-rows: 105px; } }
+      grid-auto-rows: 125px; } }
   @media only screen and (max-width: 62.5em) {
     .content {
       width: 100%;
-      grid-auto-rows: 90px; } }
+      grid-auto-rows: 105px;
+      grid-auto-flow: dense; } }
   @media only screen and (max-width: 50em) {
     .content {
       display: flex;
@@ -708,7 +712,9 @@ h4 {
 .content-6,
 .content-7,
 .content-8,
-.content-9 {
+.content-9,
+.content-long,
+.content-short {
   display: flex;
   grid-row: span 5;
   flex-direction: column;
@@ -720,7 +726,7 @@ h4 {
   border-radius: 15px;
   background-color: #fff;
   width: 430px;
-  height: 650px;
+  height: 680px;
   margin-bottom: 2rem; }
   @media only screen and (max-width: 75em) {
     .content-4,
@@ -728,7 +734,9 @@ h4 {
     .content-6,
     .content-7,
     .content-8,
-    .content-9 {
+    .content-9,
+    .content-long,
+    .content-short {
       width: 380px;
       height: auto; } }
   @media only screen and (max-width: 50em) {
@@ -737,7 +745,9 @@ h4 {
     .content-6,
     .content-7,
     .content-8,
-    .content-9 {
+    .content-9,
+    .content-long,
+    .content-short {
       width: 380px;
       align-content: center; } }
   @media only screen and (max-width: 37.5em) {
@@ -746,7 +756,9 @@ h4 {
     .content-6,
     .content-7,
     .content-8,
-    .content-9 {
+    .content-9,
+    .content-long,
+    .content-short {
       grid-template-columns: 1fr;
       width: 300px;
       text-align: center; } }
@@ -755,14 +767,18 @@ h4 {
   .content-6:hover,
   .content-7:hover,
   .content-8:hover,
-  .content-9:hover {
+  .content-9:hover,
+  .content-long:hover,
+  .content-short:hover {
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4); }
   .content-4__text,
   .content-5__text,
   .content-6__text,
   .content-7__text,
   .content-8__text,
-  .content-9__text {
+  .content-9__text,
+  .content-long__text,
+  .content-short__text {
     width: 380px;
     margin: 1.6rem;
     margin-left: 5%; }
@@ -772,7 +788,9 @@ h4 {
       .content-6__text,
       .content-7__text,
       .content-8__text,
-      .content-9__text {
+      .content-9__text,
+      .content-long__text,
+      .content-short__text {
         width: 320px; } }
     @media only screen and (max-width: 37.5em) {
       .content-4__text,
@@ -780,14 +798,18 @@ h4 {
       .content-6__text,
       .content-7__text,
       .content-8__text,
-      .content-9__text {
+      .content-9__text,
+      .content-long__text,
+      .content-short__text {
         width: 280px; } }
     .content-4__text p,
     .content-5__text p,
     .content-6__text p,
     .content-7__text p,
     .content-8__text p,
-    .content-9__text p {
+    .content-9__text p,
+    .content-long__text p,
+    .content-short__text p {
       line-height: 2.2rem;
       padding-right: 1rem; }
     .content-4__text h2,
@@ -795,7 +817,9 @@ h4 {
     .content-6__text h2,
     .content-7__text h2,
     .content-8__text h2,
-    .content-9__text h2 {
+    .content-9__text h2,
+    .content-long__text h2,
+    .content-short__text h2 {
       text-align: center;
       text-transform: uppercase;
       color: #368cbf; }
@@ -804,7 +828,9 @@ h4 {
   .content-6 img,
   .content-7 img,
   .content-8 img,
-  .content-9 img {
+  .content-9 img,
+  .content-long img,
+  .content-short img {
     width: 350px;
     height: auto;
     margin-top: 3rem;
@@ -816,21 +842,27 @@ h4 {
       .content-6 img,
       .content-7 img,
       .content-8 img,
-      .content-9 img {
+      .content-9 img,
+      .content-long img,
+      .content-short img {
         width: 280px; } }
     .content-4 img:hover,
     .content-5 img:hover,
     .content-6 img:hover,
     .content-7 img:hover,
     .content-8 img:hover,
-    .content-9 img:hover {
+    .content-9 img:hover,
+    .content-long img:hover,
+    .content-short img:hover {
       opacity: 0.8; }
     .content-4 img:active,
     .content-5 img:active,
     .content-6 img:active,
     .content-7 img:active,
     .content-8 img:active,
-    .content-9 img:active {
+    .content-9 img:active,
+    .content-long img:active,
+    .content-short img:active {
       transform: translateY(2px);
       box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1); }
   .content-4 a,
@@ -838,40 +870,44 @@ h4 {
   .content-6 a,
   .content-7 a,
   .content-8 a,
-  .content-9 a {
+  .content-9 a,
+  .content-long a,
+  .content-short a {
     color: #368cbf;
     text-decoration: none;
     font-weight: bolder; }
 
 .content-7,
 .content-8,
-.content-9 {
+.content-9,
+.content-short {
   grid-row: span 4;
   height: 500px; }
   @media only screen and (max-width: 62.5em) {
     .content-7,
     .content-8,
-    .content-9 {
+    .content-9,
+    .content-short {
       width: 380px;
       height: auto; } }
 
 .content-4 img,
 .content-6 img,
-.content-5 img {
+.content-5 img,
+.content-long img {
   width: 300px; }
   @media only screen and (max-width: 62.5em) {
     .content-4 img,
     .content-6 img,
-    .content-5 img {
+    .content-5 img,
+    .content-long img {
       width: 280px; } }
 
 .content-6 {
-  grid-row: 1/6;
-  grid-column: 1/2; }
+  grid-row: 1/6; }
 
 .content-4 {
-  grid-row: 1/6;
-  grid-column: 2/3; }
+  grid-row: 1/6; }
 
 .content__info {
   color: #fff;
@@ -885,10 +921,10 @@ h4 {
   border-radius: 10px;
   background-color: #368cbf; }
   .content__info-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 40%; }
   .content__info-time {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 40%; }
   .content__info-icon {
     border-radius: 1000%;
