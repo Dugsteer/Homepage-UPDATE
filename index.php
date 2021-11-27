@@ -116,7 +116,7 @@
          <?php 
       $title= "Christmas Tree Game"; 
       $imgsrc = "christmas-tree-game.webp";
-      $style = "width: 260px";
+      $style = "width: 260px;";
       $href = "xmas-tree-game.html";
       $text= '<p>Can you tell what decoration the naughty Ghost of Christmas Past has just turned to a lump of coal? Click on him to play!</p>';      
       $level="All"; 
@@ -129,6 +129,7 @@
       $title= "Grammar Mazes"; 
       $imgsrc = "GrammarMaze.webp";
       $href = "to-be-maze.html";
+        $style = "width: 320px;";
       $text = '<p>All of the <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through!"</p>'; 
       $level="Beginner"; 
       $time="15 mins"; 
@@ -177,8 +178,6 @@
       $time="15 mins"; 
       $icon="online";  
       include "./content-box-short.php" ?>
-
-      <?php include "./content-box-advert.php";?>
 
       <?php 
       $title= "Memory Games"; 

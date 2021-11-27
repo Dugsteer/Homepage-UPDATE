@@ -8,7 +8,7 @@
 </head>
 <body>
  
-    <div class="content-short" style="background-color:red; display:flex; flex-direction:column;">
+    <div class="content-short" style="display:flex; flex-direction:column;">
      <div class="text">Advert</div>
      <div class="advert" style="height: 90%;">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6192312197226967"
