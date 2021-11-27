@@ -99,21 +99,31 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
-
-    <div class="introduction">
-        <div class="introduction__img" id="ghostly">
-            <img src="img/london.webp" alt="London, a Great Place to Practise English" title="London, where you can put the Tools for TEFL to good use!">
-        </div>
-        <div class="introduction__text">
-            <h1>ESL-Ology.com <br> TOOLS FOR TEFL</h1>
-            <p>
-              Here you can find free tools for English lessons that can be used online and in the classroom. Esl-ology.com offers flashcards, memory games, hangman, grammar mazes and  more, all designed to help your classes. More material will be added regularly, so please check back to see what new tools for TEFL are available. And click around for hidden fun!
-            </p>
-        </div>
-    </div>
     
     <div class="content">
+
   
+      <?php 
+      $title= "ESL-Ology.com<br>TOOLS FOR TEFL"; 
+      $imgsrc = "london.webp";
+      $text = '<p style="font-size: 1.8rem; line-height:2.4rem; color:white; text-align:center">Here you can find free tools for English lessons that can be used online and in the classroom. Esl-ology.com offers flashcards, memory games, hangman, grammar mazes and  more, all designed to help your classes. More material will be added regularly, so please check back to see what new tools for TEFL are available. And click around for hidden fun!</p>';      
+      $level="Elementary"; 
+      $time="20 mins"; 
+      $icon="download"; 
+      include "./content-box-intro.php"; 
+      ?>
+
+      <?php 
+      $title= "Grammar Mazes"; 
+      $imgsrc = "GrammarMaze.webp";
+      $href = "to-be-maze.html";
+      $text = '<p>All of the <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through!"</p>'; 
+      $level="Beginner"; 
+      $time="15 mins"; 
+      $icon="online"; 
+      include "./content-box-short.php"; 
+      ?>
+
       <?php 
       $title= "Go Fish Cards"; 
       $imgsrc = "JobsGoFish.webp";
@@ -149,21 +159,12 @@
       $title= "Photo Flashcards"; 
       $imgsrc = "AnimalFlash.webp";
       $href = "bingo-daily-activity.php";
-      $text='<p>A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, either with traditional flashcards or modern "hover cards", these are available both with images and with photos.</p>';
+      $text='<p>A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, these are available both with images and with photos.</p>';
       $time="15 mins"; 
       $icon="online";  
       include "./content-box-short.php" ?>
 
-      <?php 
-      $title= "Grammar Mazes"; 
-      $imgsrc = "GrammarMaze.webp";
-      $href = "to-be-maze.html";
-      $text = '<p>All of the <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through!"</p>'; 
-      $level="Beginner"; 
-      $time="15 mins"; 
-      $icon="online"; 
-      include "./content-box-short.php"; 
-      ?>
+      <?php include "./content-box-advert.php";?>
 
       <?php 
       $title= "Memory Games"; 
