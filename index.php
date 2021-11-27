@@ -176,6 +176,25 @@
       include "./content-box-short.php"; 
       ?>
 
+      <?php
+      $title= "Text Mazes"; 
+      $imgsrc = "FrequencyAdjectivewTextMaze.webp";
+      $href = "text-maze.php";
+      $text= '<p>It\'s great fun doing a challenging <a href="text-maze.html">text maze</a>, a fun alternative to a traditional word search.</p>';      
+      $level = "A1 - B1";
+      $time="10 mins"; 
+      $icon="download";  
+      include "./content-box-tall.php" ?>
+
+      <?php
+      $title= "Printable Dominoes"; 
+      $imgsrc = "SportsDominoes.webp";
+      $href = "text-maze.php";
+      $text='<p>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</p>'; 
+      $time="15 mins"; 
+      $icon="download";  
+      include "./content-box-tall.php" ?>
+
     </div>
 
     <div class="sense-bottom">
@@ -192,23 +211,6 @@
       </script>
     </div>
 
-      <div class="links">
-        <h2 class="links__text">
-          A few more ideas for your class today.
-        </h2>
-        <div class="links__images">
-          <div class="links__images-1 figure">
-           <a href="text-maze">
-            <img src="img/FrequencyAdjectivewTextMaze.webp" alt="frequency adjectives ESL-ology text maze">
-           </a>
-              <figcaption>It's great fun doing a challenging <a href="text-maze.php">text maze</a>, a fun alternative to a traditional word search.</figcaption>
-          </div>
-          <div class="links__images-1 figure">
-            <a href="text-maze.php">
-            <img src="img/SportsDominoes.webp" alt="Sports dominoes"></a>
-              <figcaption>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</figcaption>
-          </div>
-      </div>
 
 
     </div>
