@@ -122,14 +122,13 @@
       $level="All"; 
       $time="15 mins"; 
       $icon="online"; 
-      include "./content-box-short.php"; 
+      include "./content-box-short-square.php"; 
       ?>
 
       <?php 
       $title= "Grammar Mazes"; 
       $imgsrc = "GrammarMaze.webp";
       $href = "to-be-maze.html";
-        $style = "width: 320px;";
       $text = '<p>All of the <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through!"</p>'; 
       $level="Beginner"; 
       $time="15 mins"; 

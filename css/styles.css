@@ -827,8 +827,12 @@ h4 {
 
 .content-long img,
 .content-short img {
-  width: 300px; }
+  width: 320px; }
   @media only screen and (max-width: 62.5em) {
+    .content-long img,
+    .content-short img {
+      width: 300px; } }
+  @media only screen and (max-width: 37.5em) {
     .content-long img,
     .content-short img {
       width: 280px; } }
