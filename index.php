@@ -113,6 +113,18 @@
       include "./content-box-intro.php"; 
       ?>
 
+         <?php 
+      $title= "Christmas Tree Game"; 
+      $imgsrc = "christmas-tree-game.webp";
+      $style = "width: 260px";
+      $href = "xmas-tree-game.html";
+      $text= '<p>Can you tell what decoration the naughty Ghost of Christmas Past has just turned to a lump of coal? Click on him to play!</p>';      
+      $level="All"; 
+      $time="15 mins"; 
+      $icon="online"; 
+      include "./content-box-short.php"; 
+      ?>
+
       <?php 
       $title= "Grammar Mazes"; 
       $imgsrc = "GrammarMaze.webp";
@@ -123,6 +135,8 @@
       $icon="online"; 
       include "./content-box-short.php"; 
       ?>
+
+     
 
       <?php 
       $title= "Go Fish Cards"; 

@@ -171,7 +171,8 @@
   }
 }
 
-.content-long img{
+.content-long img,
+.content-short img{
   width: 300px;
 
   @media only screen and (max-width: $bp-large) {
