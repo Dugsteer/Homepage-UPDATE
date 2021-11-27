@@ -9,8 +9,7 @@
 <body>
      <div class="content-long">
   <figure class="content-long__img">
-    <img src="./img/<?php echo $imgsrc?>" alt="<?php echo $title?>"/>
-  
+    <a href="<?php echo $href?>"><img src="./img/<?php echo $imgsrc?>" alt="<?php echo $title?>"/></a>
     </figure>
     <div class="content-long__text">
       <h2 class="content-title"><?php echo $title?></h2>
