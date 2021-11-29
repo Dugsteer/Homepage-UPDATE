@@ -7,13 +7,13 @@
     <title>ContentLong</title>
 </head>
 <body>
-     <div class="content-short intro" style="background-color: #368cbf;">
+     <div class="content-short shorter intro" style="background-color: #368cbf;">
 
     <div class="content-short__text">
       <h2 class="content-title" style="color:white; text-transform:initial; font-size: 2rem; margin-bottom: 1rem;"><?php echo $title?></h2>
       <p><?php echo $text ?></p>
     </div>
-    <div class="explainer" style="margin-top: 4rem; width: 300px; display: flex; align-items: center; justify-content:space-between; color:white;">
+   <div class="explainer" style="width: 280px; display: flex; align-items: center; justify-content:space-between; color:white;">
       <p style="color:white;">Dowload </p><p><svg class="content__info-icon">
             <use xlink:href="sprite.svg#download"></use>
           </svg></p>

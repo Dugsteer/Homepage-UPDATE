@@ -185,3 +185,32 @@
     width: 280px;
   }
 }
+
+.shorter {
+   grid-row: span 4;
+  height: 250px;
+
+    @media only screen and (max-width: $bp-largest) {
+    height: 300px;
+  }
+    @media only screen and (max-width: $bp-medium) {
+    height: 200px;
+  }
+    @media only screen and (max-width: $bp-small) {
+    height: 250px;
+  }
+}
+
+.intro {
+    &:hover {
+    box-shadow: 0px 0px 0px 0px; 
+  }
+}
+
+.shorter a {
+  color: $color-green;
+}
+
+.spacer {
+  background: transparent;
+}
