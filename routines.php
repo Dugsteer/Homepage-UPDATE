@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esl-ology TOOLS FOR TEFL. Free Online Vocabulary Bingo, Flashcards, Grammar Mazes and Topic-based Materials for ESL Teachers to use with English Classes on the Web or On Screen in the Classroom.">
-    <meta name="keywords" content="class games online EFL English tools teachers worksheets mazes">
-    <title>Esl-Ology.Com: Tools for TEFL</title>
+    <meta name="keywords" content="class games online EFL English tools teachers worksheets mazes actions routines">
+    <title>ESL Daily Routines</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
@@ -60,23 +60,33 @@
       </div>
 
     
-      <div class="nav-bar" id="navbar">
-        <a href="index.html" class="nav-bar__logo">
-          <svg class="icon-header nav-bar__logo-img">
-            <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()">
-            </use>
-          </svg>    </a>
-        <h3 class="nav-bar__title">Esl-Ology.Com</h3>
-        <div class="nav-bar__title-page">
-          <span class="nav-bar__title-page-main" id="pageTitle"></span>
+     <div class="nav-bar" id="navbar">
+      <a href="index.html" class="nav-bar__logo">
+        <svg class="icon-header nav-bar__logo-img">
+          <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()"></use>
+        </svg>
+      </a>
+      <h3 class="nav-bar__title">Esl-Ology.Com</h3>
+      <div class="nav-bar__title-page">
+        <span class="nav-bar__title-page-main" id="pageTitle"
+          >DAILY ROUTINES</span
+        >
       </div>
       <div class="nav-bar__links">
-      <a href="index.html" class="nav-bar__link link3">Home</a>
-      <svg viewBox="0 0 100 80" width="40" height="20" onclick="toggler();" id="menu" class="menu">
-        <rect width="100" height="12"></rect>
-        <rect y="30" width="100" height="12"></rect>
-        <rect y="60" width="100" height="12"></rect>
-      </svg>      </div>
+        <a href="index.html" class="nav-bar__link link3">Home</a>
+        <svg
+          viewBox="0 0 100 80"
+          width="40"
+          height="20"
+          onclick="toggler();"
+          id="menu"
+          class="menu"
+        >
+          <rect width="100" height="12"></rect>
+          <rect y="30" width="100" height="12"></rect>
+          <rect y="60" width="100" height="12"></rect>
+        </svg>
+      </div>
     </div>
 
   <div id="wrapper" class="wrapper">
@@ -103,9 +113,9 @@
     <div class="content">
 
   
-      <?php 
-      $title= "Online Boardgames"; 
-      $text = '<p style="font-size: 1.8rem; line-height:2.4rem; color:white; text-align:center">Choose a boardgame to play onlilne fromm our growing collection. Or go to our <a href="boardgames.php">boardgames page</a> to upload a boardgame you have found on the internet. There are a lot to choose from!</p>';      
+    <?php 
+      $title= "Everyday Actions"; 
+      $text = '<p style="font-size: 1.8rem; line-height:2.4rem; color:white; text-align:center">Learn about the things we do every day with this range of worksheets, printables and online games. Check out the icon to see whether the items are printable or downloadable.</p>';      
       $level="Elementary"; 
       $time="20 mins"; 
       $icon="download"; 
@@ -113,65 +123,60 @@
       ?>
 
         <?php 
-      $title= "Sports Board Game"; 
-      $imgsrc = "sports-board.webp";
-      $href = "boardgame-player.php?imgsrc=sports-board.webp";
-      $hrefdoc = "/docs/SportsBoardGame.pdf";
-      $text= '<p>Name the sports as your try to win the championship. Try for goals as you climb  ladders and slide down snakes.</p>';      
+      $title= "Go Fish! Cards"; 
+      $imgsrc = "routines-gofish.webp";
+      $href = "docs/RoutineGoFish.pdf";
+      $text= '<p>Print out two sets of cards and cut them up. Deal four each. Students ask questions and take a card if the answer is "Go Fish!".</p>';      
       $level="All"; 
       $time="15 mins"; 
-      $icon="online"; 
-      include "./content-box-game.php"; 
+      $icon="download"; 
+      include "./content-box-tall.php"; 
       ?>
 
       <?php 
-      $title= "Jobs Board Game"; 
-      $imgsrc = "jobs-board.webp";
-      $href = "/boardgame-player.php?imgsrc=jobs-board.webp";
-      $hrefdoc = "/docs/JobBoardGame.pdf";
-      $text = '<p>From going through school to university or on the job training, this game will help you get that job.</p>'; 
+      $title= "Bingo Cards"; 
+      $imgsrc = "routines-bingo.webp";
+      $href = "bingo-daily-activity.html";
+      $text = '<p>Download and print the randomized bingo cards, then use the online bingo caller to generate the answers. Great fun at the end of class.</p>'; 
       $level="Elementary"; 
-      $time="15 mins"; 
-      $icon="online"; 
-      include "./content-box-game.php"; 
+      $time="10 mins"; 
+      $icon="download"; 
+      include "./content-box-tall.php"; 
       ?>
 
      
 
       <?php 
-      $title= "Questions Board Game"; 
-      $imgsrc = "questions-board.webp";
-      $href = "/boardgame-player.php?imgsrc=questions-board.webp";
-         $hrefdoc = "/docs/HalloweenBoardGame.pdf";
-      $text = '<p>Ask a question when you land on a word and listen as the other students try to answer it. You could add a timer — 30 seconds.</p>';
+      $title= "Memory Game"; 
+      $imgsrc = "routines-memory.webp";
+      $href = "daily-activity-memory.html";
+      $text = '<p>Three sets of pelmanism-style memory games. Who can get through the cards the quickest? Great for revising vocabulary.</p>';
       $level="Elementary"; 
-      $time="20 mins"; 
-      $icon="download"; 
-      include "./content-box-game.php"; 
+      $time="10 mins"; 
+      $icon="online"; 
+      include "./content-box-short.php"; 
       ?>
 
       <?php 
-      $title= "Snakes and Ladders"; 
-      $imgsrc = "snakes-board.webp";
-      $href = "/boardgame-player.php?imgsrc=snakes-board.webp";
-      $hrefdoc = "docs/HalloweenBoardGame.pdf";
-      $text = '<p>When it\'s time for an online game of snakes and ladders, you\'ve got one here. Maybe students have to answer questions to play?</p>';
-      $level="Elementary"; 
-      $time="20 mins"; 
+      $title= "Dominoes"; 
+      $imgsrc = "RoutineDominoes.webp";
+      $href = "docs/routine-dominoes.pdf";
+      $text = '<p>Print two sets of the cards for each group of players. Start with seven cards each and see who can finish first matching the words to the pictures.</p>';
+      $level="Beginner"; 
+      $time="10 mins"; 
       $icon="download"; 
-      include "./content-box-game.php"; 
+      include "./content-box-tall.php"; 
       ?>
 
         <?php
-      $title= "Halloween Board Game"; 
-      $imgsrc = "halloween-board.webp";
-      $href = "/boardgame-player.php?imgsrc=halloween-board.webp";
-      $hrefdoc = "/docs/HalloweenBoardGame.pdf";
-      $text="A Halloween board game can be for life, not just for the spooky season. Play whenever you need to have a scream!";
-      $level="Elementary"; 
+      $title= "Flashcards"; 
+      $imgsrc = "routines-flashcards.webp";
+      $href = "daily-activity-flashcards.html";
+      $text='<p>Photo flashcards help teach basic vocabulary or to revise it before playing a game. Click on the right and left arrows to move and mouse over the image to reveal the text.</p>';
+      $level="Beginner"; 
       $time="10 mins"; 
       $icon="online";  
-      include "./content-box-game.php" ?>
+      include "./content-box-short.php" ?>
 
      
 
