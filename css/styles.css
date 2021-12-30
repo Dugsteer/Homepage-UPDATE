@@ -998,10 +998,9 @@ h4 {
     text-align: center;
     line-height: 1.5; }
     .footer__copyright p {
-      font-size: 1.2rem; }
-
-#footer a {
-  color: #f8e38c; }
-
-a:link {
-  text-decoration: none; }
+      font-size: 1.2rem;
+      color: white; }
+  .footer a {
+    color: #f8e38c !important; }
+  .footer a:link {
+    text-decoration: none; }

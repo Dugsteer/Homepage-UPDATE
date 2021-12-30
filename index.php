@@ -63,7 +63,7 @@
     <?php
     $title = "Go Fish Cards";
     $imgsrc = "JobsGoFish.webp";
-    $href = "text-maze.php";
+    $href = "search-page.php?type=Go+fish";
     $text = '<p>"Print out and play a game of <a href="text-maze.html">Jobs Go Fish cards</a>. Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze.html">Word Search</a> too!"</p>';
     $level = "Elementary";
     $time = "20 mins";
@@ -74,7 +74,7 @@
     <?php
     $title = "Bingo Cards";
     $imgsrc = "DailyRoutineBingo.webp";
-    $href = "bingo-daily-activity.php";
+    $href = "search-page.php?type=bingo";
     $text = '<p>"Have fun printing out random bingo cards for a variety of topics. Use the online bingo caller to call out the answers. Great for the end the class."</p>';
     $level = "Elementary";
     $time = "20 mins";
@@ -85,8 +85,8 @@
     <?php
     $title = "Play Any Boardgame";
     $imgsrc = "JobBoardGame.webp";
-    $href = "text-maze.php";
-    $text = "There are three different sets of cards in each of our matching card games. Turn up two cards and if a picture matches a word, you win them. How fast can you clear the board?";
+    $href = "boardgame-player.php";
+    $text = "Upload a jpg of any boardgame that you find online and play it onscreen, in virtual classes etc. A hit with our students!";
     $level = "Elementary";
     $time = "10 mins";
     $icon = "online";
@@ -95,7 +95,7 @@
     <?php
     $title = "Photo Flashcards";
     $imgsrc = "AnimalFlash.webp";
-    $href = "bingo-daily-activity.php";
+    $href = "flashcard-animals.html";
     $text = '<p>A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, these are available both with images and with photos.</p>';
     $time = "15 mins";
     $icon = "online";
@@ -115,7 +115,7 @@
     <?php
     $title = "Text Mazes";
     $imgsrc = "FrequencyAdjectivewTextMaze.webp";
-    $href = "text-maze.php";
+    $href = "search-page.php?type=text+maze";
     $text = '<p>It\'s great fun doing a challenging <a href="text-maze.html">text maze</a>, a fun alternative to a traditional word search.</p>';
     $level = "A1 - B1";
     $time = "10 mins";
@@ -125,7 +125,7 @@
     <?php
     $title = "Printable Dominoes";
     $imgsrc = "SportsDominoes.webp";
-    $href = "text-maze.php";
+    $href = "search-page.php?type=dominoes";
     $text = '<p>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</p>';
     $time = "15 mins";
     $icon = "download";

@@ -30,15 +30,18 @@
 
     p {
     font-size: 1.2rem;
+    color: white;
     }
   }
 
-}
-
-#footer a{
-  color: $color-yellow;
+a {
+  color: $color-yellow !important;
 }
 
 a:link {
   text-decoration: none;
 }
+
+}
+
+
