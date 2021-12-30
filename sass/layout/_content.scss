@@ -76,7 +76,7 @@
   background-color: #fff;
   width: 430px;
 
-  height: 680px;
+  height: auto;
 
   @media only screen and (max-width: $bp-largest) {
     width: 380px;
@@ -92,10 +92,15 @@
     grid-template-columns: 1fr;
     width: 310px;
     text-align: center;
+    height: auto;
   }
 
   &:hover {
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4);
+  }
+  &_title {
+    color: $color-blue;
+    margin-top: 2rem;
   }
 
   &__text {
@@ -144,11 +149,16 @@
     }
   }
 
-
   & a {
     color: $color-blue;
     text-decoration: none;
     font-weight: bolder;
+  }
+}
+
+.lengther{
+    @media only screen and (max-width: $bp-small) {
+    height: 580px;
   }
 }
 
@@ -187,23 +197,23 @@
 }
 
 .shorter {
-   grid-row: span 4;
+  grid-row: span 4;
   height: 250px;
 
-    @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-largest) {
     height: 300px;
   }
-    @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     height: 200px;
   }
-    @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-small) {
     height: 250px;
   }
 }
 
 .intro {
-    &:hover {
-    box-shadow: 0px 0px 0px 0px; 
+  &:hover {
+    box-shadow: 0px 0px 0px 0px;
   }
 }
 
@@ -214,3 +224,35 @@
 .spacer {
   background: transparent;
 }
+
+.content-rand {
+  display: flex;
+  grid-row: span 9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: transparent;
+  width: 430px;
+
+  height: 680px;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 380px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 380px;
+    align-content: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    width: 310px;
+    text-align: center;
+  }
+}
+

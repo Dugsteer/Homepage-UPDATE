@@ -626,6 +626,26 @@ h4 {
   font-size: 4rem;
   color: red; }
 
+.button-submit {
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.6rem;
+  width: 14rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: #368cbf;
+  outline: none;
+  border: none;
+  text-align: center; }
+  .button-submit:hover {
+    filter: brightness(110%);
+    transform: scale(105%); }
+  .button-submit:active {
+    transform: translateY(2px); }
+
 .wrapper {
   width: 1200px;
   position: relative;
@@ -738,7 +758,7 @@ h4 {
   border-radius: 15px;
   background-color: #fff;
   width: 430px;
-  height: 680px; }
+  height: auto; }
   @media only screen and (max-width: 75em) {
     .content-long,
     .content-short {
@@ -754,10 +774,15 @@ h4 {
     .content-short {
       grid-template-columns: 1fr;
       width: 310px;
-      text-align: center; } }
+      text-align: center;
+      height: auto; } }
   .content-long:hover,
   .content-short:hover {
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.4); }
+  .content-long_title,
+  .content-short_title {
+    color: #368cbf;
+    margin-top: 2rem; }
   .content-long__text,
   .content-short__text {
     width: 380px;
@@ -803,6 +828,10 @@ h4 {
     color: #368cbf;
     text-decoration: none;
     font-weight: bolder; }
+
+@media only screen and (max-width: 37.5em) {
+  .lengther {
+    height: 580px; } }
 
 .content-short {
   grid-row: span 7;
@@ -857,6 +886,32 @@ h4 {
 
 .spacer {
   background: transparent; }
+
+.content-rand {
+  display: flex;
+  grid-row: span 9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: transparent;
+  width: 430px;
+  height: 680px; }
+  @media only screen and (max-width: 75em) {
+    .content-rand {
+      width: 380px; } }
+  @media only screen and (max-width: 50em) {
+    .content-rand {
+      width: 380px;
+      align-content: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .content-rand {
+      grid-template-columns: 1fr;
+      width: 310px;
+      text-align: center; } }
 
 .links {
   grid-row: 5/6;

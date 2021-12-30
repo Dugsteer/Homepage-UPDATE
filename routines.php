@@ -171,7 +171,7 @@
         <?php
       $title= "Flashcards"; 
       $imgsrc = "routines-flashcards.webp";
-      $href = "daily-activity-flashcards.html";
+      $href = "daily-activity-flashcards.php";
       $text='<p>Photo flashcards help teach basic vocabulary or to revise it before playing a game. Click on the right and left arrows to move and mouse over the image to reveal the text.</p>';
       $level="Beginner"; 
       $time="10 mins"; 
