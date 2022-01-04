@@ -1,7 +1,16 @@
 <?php include "./db_worksheets.php" ?>
-<?php include "./homepage-includes/header.php" ?>
-<?php include "./homepage-includes/social.php" ?>
-<?php include "./homepage-includes/navbar.php" ?>
+
+<?php 
+$page_title= "Esl-Ology.Com: Tools for TEFL";
+$css = "css/styles.css";
+$page_content_description = "Esl-ology TOOLS FOR TEFL. Free Online Vocabulary Bingo, Flashcards, Grammar Mazes and Topic-based Materials for ESL Teachers to use with English Classes on the Web or On Screen in the Classroom.";
+$page_keywords = "class games online EFL English tools teachers worksheets mazes";
+include "./includes/header.php" ?>
+
+<?php include "./includes/social.php" ?>
+
+<?php 
+$page_title= " "; include "./includes/navbar.php" ?>
 
 
 <div id="wrapper" class="wrapper">
@@ -26,7 +35,7 @@
     $level = "Elementary";
     $time = "20 mins";
     $icon = "download";
-    include "./content-box-intro.php";
+    include "./includes/content-box/content-box-intro.php";
     ?>
 
     <div class= "content-rand" id="randoms">
@@ -44,7 +53,7 @@
     $level = "All";
     $time = "15 mins";
     $icon = "online";
-    include "./content-box-short-square.php";
+    include "./includes/content-box/content-box-short-square.php";
     ?>
 
     <?php
@@ -55,7 +64,7 @@
     $level = "Beginner";
     $time = "15 mins";
     $icon = "online";
-    include "./content-box-short.php";
+    include "./includes/content-box/content-box-short.php";
     ?>
 
 
@@ -68,7 +77,7 @@
     $level = "Elementary";
     $time = "20 mins";
     $icon = "download";
-    include "./content-box-tall.php";
+    include "./includes/content-box/content-box-tall.php";
     ?>
 
     <?php
@@ -79,7 +88,7 @@
     $level = "Elementary";
     $time = "20 mins";
     $icon = "download";
-    include "./content-box-tall.php";
+    include "./includes/content-box/content-box-tall.php";
     ?>
 
     <?php
@@ -90,7 +99,7 @@
     $level = "Elementary";
     $time = "10 mins";
     $icon = "online";
-    include "./content-box-tall.php" ?>
+    include "./includes/content-box/content-box-tall.php" ?>
 
     <?php
     $title = "Photo Flashcards";
@@ -99,7 +108,7 @@
     $text = '<p>A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, these are available both with images and with photos.</p>';
     $time = "15 mins";
     $icon = "online";
-    include "./content-box-short.php" ?>
+    include "./includes/content-box/content-box-short.php" ?>
 
     <?php
     $title = "Memory Games";
@@ -109,7 +118,7 @@
     $level = "Elementary";
     $time = "20mins";
     $icon = "online";
-    include "./content-box-short.php";
+    include "./includes/content-box/content-box-short.php";
     ?>
 
     <?php
@@ -120,7 +129,7 @@
     $level = "A1 - B1";
     $time = "10 mins";
     $icon = "download";
-    include "./content-box-tall.php" ?>
+    include "./includes/content-box/content-box-tall.php" ?>
 
     <?php
     $title = "Printable Dominoes";
@@ -129,7 +138,7 @@
     $text = '<p>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</p>';
     $time = "15 mins";
     $icon = "download";
-    include "./content-box-tall.php" ?>
+    include "./includes/content-box/content-box-tall.php" ?>
 
     <?php
     $title = "73 Questions";
@@ -139,7 +148,7 @@
     $time = "30 mins";
     $level = "B1 - C2";
     $icon = "online";
-    include "./content-box-short.php" ?>
+    include "./includes/content-box/content-box-short.php" ?>
 
   </div>
 
@@ -159,4 +168,5 @@
 
 </div>
 
-<?php include "./homepage-includes/footer.php" ?>
+<?php $credits_link = "homepage-credits.html";
+include "./includes/footer.php" ?>

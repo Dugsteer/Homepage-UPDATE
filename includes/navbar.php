@@ -6,7 +6,7 @@
     </svg> </a>
   <h3 class="nav-bar__title">Esl-Ology.Com</h3>
   <div class="nav-bar__title-page">
-    <span class="nav-bar__title-page-main" id="pageTitle"></span>
+    <span class="nav-bar__title-page-main" id="pageTitle"><?php echo $page_title; ?></span>
   </div>
   <div class="nav-bar__links">
     <a href="index.html" class="nav-bar__link link3">Home</a>
