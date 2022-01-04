@@ -5,7 +5,7 @@ if (isset($_GET['type'])) {
     $topic_type = $_GET['type'];
 
 } else {$topic_type = $type;}
-$query = "SELECT * FROM worksheets WHERE sheet_tags LIKE '%{$topic_type}%' ORDER BY sheet_title DESC LIMIT 0, 9";
+$query = "SELECT * FROM worksheets WHERE sheet_tags LIKE '%{$topic_type}%' ORDER BY sheet_title DESC";
 $select_sheets = mysqli_query($connection, $query);
 
 while ($row = mysqli_fetch_assoc($select_sheets)) {

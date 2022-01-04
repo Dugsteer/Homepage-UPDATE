@@ -4,8 +4,8 @@
 <?php
 
 $sheet_type === "pdf-class" ? $content_type = "content-long" : $content_type = "content-short";
-$sheet_type === "pdf-class" ? $icon_type = "download" : $icon_type = "online";
 $sorter = substr($sheet_url, -3);
+
 
 echo "<div class='$content_type'>
       <figure class='";?>
@@ -15,24 +15,28 @@ echo "<div class='$content_type'>
 //decide whether to open a web address or download a document
 switch ($sorter) {
       case 'tml':
+            $icon_type = "online";
             echo
             "<a href='https://esl-ology.com/$sheet_url'>
             <img src='img/$sheet_image' alt='$sheet_title'></a>";
             break;
 
       case 'ebp':
+            $icon_type = "online";
             echo
             "<a href='https://esl-ology.com/$sheet_url'>
       <img src='img/$sheet_image' alt='$sheet_title'></a>";
             break;
 
       case 'php':
+            $icon_type = "online";
             echo
             "<a href='https://esl-ology.com/$sheet_url'>
       <img src='img/$sheet_image' alt='$sheet_title'></a>";
             break;
 
       default:
+            $icon_type = "download";
             echo "<a href='docs/$sheet_url'>
             <img src='img/$sheet_image' alt='$sheet_title'></a>";
 };

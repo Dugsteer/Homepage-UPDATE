@@ -1,16 +1,16 @@
 <?php include "./db_worksheets.php" ?>
 
-<?php 
-$page_title= "Esl-Ology.Com: Tools for TEFL";
-$css = "css/styles.css";
+<?php
+$page_title = "Esl-Ology.Com: Tools for TEFL";
 $page_content_description = "Esl-ology TOOLS FOR TEFL. Free Online Vocabulary Bingo, Flashcards, Grammar Mazes and Topic-based Materials for ESL Teachers to use with English Classes on the Web or On Screen in the Classroom.";
 $page_keywords = "class games online EFL English tools teachers worksheets mazes";
 include "./includes/header.php" ?>
 
 <?php include "./includes/social.php" ?>
 
-<?php 
-$page_title= " "; include "./includes/navbar.php" ?>
+<?php
+$page_title = " ";
+include "./includes/navbar.php" ?>
 
 
 <div id="wrapper" class="wrapper">
@@ -38,28 +38,18 @@ $page_title= " "; include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-intro.php";
     ?>
 
-    <div class= "content-rand" id="randoms">
-    <?php
-    include "./homepage-includes/include_page_rand.php";
-    ?>
-</div>
+    <div class="content-rand" id="randoms">
+      <?php
+      include "./homepage-includes/include_page_rand.php";
+      ?>
+    </div>
 
-    <?php
-    $title = "Christmas Tree Game";
-    $imgsrc = "christmas-tree-game.webp";
-    $style = "width: 260px;";
-    $href = "xmas-tree-game.html";
-    $text = '<p>Can you tell what decoration the naughty Ghost of Christmas Past has just turned to a lump of coal? Click on him to play!</p>';
-    $level = "All";
-    $time = "15 mins";
-    $icon = "online";
-    include "./includes/content-box/content-box-short-square.php";
-    ?>
+
 
     <?php
     $title = "Grammar Mazes";
     $imgsrc = "GrammarMaze.webp";
-    $href = "to-be-maze.html";
+    $href = "topic_page.php?&type=grammar+maze";
     $text = '<p>All of the <a href="questions-maze.html">grammar mazes </a>help student awareness of grammar mistakes. The aim is to have a clean run all the way through!"</p>';
     $level = "Beginner";
     $time = "15 mins";
@@ -72,7 +62,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Go Fish Cards";
     $imgsrc = "JobsGoFish.webp";
-    $href = "search-page.php?type=Go+fish";
+    $href = "topic_page.php?type=Go+fish";
     $text = '<p>"Print out and play a game of <a href="text-maze.html">Jobs Go Fish cards</a>. Ideally played on a large screen. Or play a <a href="boardgame-player.html">Sports Board Game</a> or try a <a href="text-maze.html">Word Search</a> too!"</p>';
     $level = "Elementary";
     $time = "20 mins";
@@ -83,7 +73,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Bingo Cards";
     $imgsrc = "DailyRoutineBingo.webp";
-    $href = "search-page.php?type=bingo";
+    $href = "topic_page.php?type=bingo";
     $text = '<p>"Have fun printing out random bingo cards for a variety of topics. Use the online bingo caller to call out the answers. Great for the end the class."</p>';
     $level = "Elementary";
     $time = "20 mins";
@@ -104,7 +94,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Photo Flashcards";
     $imgsrc = "AnimalFlash.webp";
-    $href = "flashcard-animals.html";
+    $href = "topic_page.php?&type=flashcards";
     $text = '<p>A great way to present or revise <a href="flashcard-animals.html">vocabulary sets </a>with a class, these are available both with images and with photos.</p>';
     $time = "15 mins";
     $icon = "online";
@@ -113,7 +103,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Memory Games";
     $imgsrc = "SportMemory.webp";
-    $href = "matching-sports.html";
+    $href = "topic_page.php?&type=memory+game";
     $text = '<p>There are three different sets of cards in each of our matching card games. Turn up two cards and if a picture matches a word, you win them. How fast can you clear the board?</p>';
     $level = "Elementary";
     $time = "20mins";
@@ -124,7 +114,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Text Mazes";
     $imgsrc = "FrequencyAdjectivewTextMaze.webp";
-    $href = "search-page.php?type=text+maze";
+    $href = "topic_page.php?type=text+maze";
     $text = '<p>It\'s great fun doing a challenging <a href="text-maze.html">text maze</a>, a fun alternative to a traditional word search.</p>';
     $level = "A1 - B1";
     $time = "10 mins";
@@ -134,7 +124,7 @@ $page_title= " "; include "./includes/navbar.php" ?>
     <?php
     $title = "Printable Dominoes";
     $imgsrc = "SportsDominoes.webp";
-    $href = "search-page.php?type=dominoes";
+    $href = "topic_page.php?type=dominoes";
     $text = '<p>Anyone for <a href="memory-halloween.html">dominoes?</a> Click to see our printable sets. Make two copies.</p>';
     $time = "15 mins";
     $icon = "download";
@@ -150,6 +140,18 @@ $page_title= " "; include "./includes/navbar.php" ?>
     $icon = "online";
     include "./includes/content-box/content-box-short.php" ?>
 
+
+    <?php
+    $title = "Christmas Tree Game";
+    $imgsrc = "christmas-tree-game.webp";
+    $style = "width: 260px;";
+    $href = "xmas-tree-game.html";
+    $text = '<p>Can you tell what decoration the naughty Ghost of Christmas Past has just turned to a lump of coal? Click on him to play!</p>';
+    $level = "All";
+    $time = "15 mins";
+    $icon = "online";
+    include "./includes/content-box/content-box-short-square.php";
+    ?>
   </div>
 
   <div class="sense-bottom">
