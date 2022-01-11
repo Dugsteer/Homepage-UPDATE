@@ -40,7 +40,7 @@ include "./includes/navbar.php" ?>
 
     <div class="content-rand" id="randoms">
       <?php
-      include "./homepage-includes/include_page_rand.php";
+      include "./homepage-includes/include_rand_daily.php";
       ?>
     </div>
 
