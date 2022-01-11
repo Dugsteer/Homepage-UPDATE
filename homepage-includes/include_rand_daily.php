@@ -7,21 +7,26 @@ global $connection;
 //  Otherwise, empty the table, select three rows at random and insert them. 
 // Pass the daily rows to the frontend.
 
+//Let's get the date on the sheet
 $query = "SELECT sheet_date FROM daily LIMIT 1";
 $sheet_query = mysqli_query($connection, $query);
 
 while ($row = mysqli_fetch_assoc($sheet_query)) {
   $current_sheet_date= $row['sheet_date'];
 
+//And today's date
   $date = date("Y-m-d");
 }
 
+//If there is a date in the table and it is not today...
 if (!$current_sheet_date || $current_sheet_date !== $date) {
-  echo $current_sheet_date;
-  echo $date;
+
+//Empty the table 
+
 $deletion = "DELETE FROM daily";
 $deletion_command = mysqli_query($connection, $deletion);
 
+//Then fill the table with 3 new worksheet rows. Make sure they are not Xmas or Halloween worksheets. Later we can make a variable that checks if the date is NEAR Xmas or Halloween and then expressly include them.
 
     $query = "SELECT * FROM worksheets ORDER BY RAND() LIMIT 3 WHERE sheet_tags NOT LIKE 'xmas' AND sheet_tags NOT LIKE 'Halloween' ";
     $select_random_sheets = mysqli_query($connection, $query);
@@ -42,12 +47,14 @@ $deletion_command = mysqli_query($connection, $deletion);
 
     $create_post_query = mysqli_query($connection, $query);
 
+//Get a message if it didn't work
+
     if (!$create_post_query) {
       die('Query FAILED. This rather sucks!' . mysqli_error($connection));
-    } else {
-      echo "<h2>Successfully Topicked! You rockgod!</h2>";
-    }
+    } 
 };
+
+//Select the three worksheet rows and stick em in the DOM
 
 $query = "SELECT * FROM daily ";
 $select_sheets = mysqli_query($connection, $query);
@@ -67,7 +74,7 @@ while ($row = mysqli_fetch_assoc($select_sheets)) {
        <h1 class='content-long_title'>Today's Choices...</h1>
   <figure class='content-long__img'>";
 
-  //Choose download or open web location depending on resource last 3 letters.
+  //Choose to make a link to download or open web location depending on resource last 3 letters.
 switch ($sorter) {
   case 'tml':
     echo
@@ -98,6 +105,8 @@ case 'ebp':
 
 
 }
+
+//If today is the same date as on the sheet, no changes needed, just select the three rows and stick em in the DOM
 } else {
   $query = "SELECT * FROM daily ";
   $select_sheets = mysqli_query($connection, $query);
