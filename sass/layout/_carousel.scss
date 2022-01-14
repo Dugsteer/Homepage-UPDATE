@@ -1,0 +1,119 @@
+.carousel {
+  display: grid !important;
+  grid-column: 1/2;
+  grid-template-rows: 380px 50px;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 360px;
+  padding-top:1rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 380px;
+    height: auto;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 380px;
+    align-content: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    width: 310px;
+    text-align: center;
+    height: auto;
+  }
+
+  &_text {
+    grid-row: 2/3;
+    width: 360px;
+    text-align: flex-end;
+    justify-self: center;
+    padding:1rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 320px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 280px;
+    }
+
+    & p {
+      line-height: 2.2rem;
+      padding-right: 1rem;
+      font-size: 1.2rem;
+    }
+
+    & h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-blue;
+    }
+  }
+
+  & a {
+    color: $color-blue;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+}
+
+.carousel_img {
+  grid-row: 1/2;
+  justify-self: center;
+  object-fit: contain;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 200px;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 280px;
+  }
+
+  & img {
+    width: 250px;
+    justify-self: center;
+  }
+}
+
+// .content-rand {
+//   display: grid;
+//   grid-template-rows: auto;
+//   grid-row: span 7;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   box-shadow: none;
+//   padding: 1rem;
+//   box-sizing: border-box;
+//   border-radius: 15px;
+//   width: 360px;
+//   box-shadow: $box-shadow-small;
+//   background-color: $color-light-grey;
+//   justify-self: center;
+
+//   height: 450px;
+
+//   @media only screen and (max-width: $bp-largest) {
+//     width: 380px;
+//   }
+
+//   @media only screen and (max-width: $bp-medium) {
+//     width: 380px;
+//     align-content: center;
+//   }
+
+//   @media only screen and (max-width: $bp-small) {
+//     grid-template-columns: 1fr;
+//     width: 310px;
+//     text-align: center;
+//   }
+// }
+
+// .figure.carousel_img {
+//   grid-row: 2/3;
+//   justify-self: center;
+//   margin: auto;
+// }

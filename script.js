@@ -1,10 +1,7 @@
 const menu = document.getElementById("menu");
 const sidey = document.getElementById("sidebar");
 const blue = window.matchMedia("(max-width: 800px)");
-// const changePic = document.getElementById("ghostly");
-// const loader = document.getElementById("loaderDiv");
-// const jiggly = document.getElementById("imageCard");
-// const imageText = document.getElementById("imageText");
+
 const randoms = document.getElementById("randoms").querySelectorAll('h1');
 
     randoms[0].parentNode.style.display = "flex";
