@@ -927,6 +927,26 @@ h4 {
       width: 310px;
       text-align: center; } }
 
+.bim {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  object-fit: cover;
+  height: fit-content;
+  padding: none;
+  margin: none; }
+
+.bim img {
+  top: 30px; }
+
+#randoms {
+  background-color: #eaeaea; }
+
+.bimtitle {
+  color: #368cbf;
+  margin-top: 2rem;
+  text-align: center; }
+
 .links {
   grid-row: 5/6;
   grid-column: 2/3;

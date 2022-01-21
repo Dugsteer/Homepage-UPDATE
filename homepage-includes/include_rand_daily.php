@@ -1,34 +1,48 @@
-<?php
-// include "db_worksheets.php";
-global $connection;
+<!DOCTYPE html>
+<html lang="en">
 
-//Check check for date
-//if date the same, just get the three rows.
-//  Otherwise, empty the table, select three rows at random and insert them. 
-// Pass the daily rows to the frontend.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-//Let's get the date on the sheet
-$current_sheet_date = '2000-1-1';
-$date = '2000-1-2';
-$query = "SELECT sheet_date FROM daily LIMIT 1";
-$sheet_query = mysqli_query($connection, $query);
+  <title>Document</title>
+</head>
 
-while ($row = mysqli_fetch_assoc($sheet_query)) {
-  $current_sheet_date= $row['sheet_date'];
+<body>
 
-//And today's date
-  $date = date("Y-m-d");
-}
+  <?php
+  // include "db_worksheets.php";
+  global $connection;
 
-//If there is a date in the table and it is not today...
-if ($current_sheet_date !== $date) {
+  //Check check for date
+  //if date the same, just get the three rows.
+  //  Otherwise, empty the table, select three rows at random and insert them. 
+  // Pass the daily rows to the frontend.
 
-//Empty the table 
+  //Let's get the date on the sheet
+  $current_sheet_date = '2000-1-1';
+  $date = '2000-1-2';
+  $query = "SELECT sheet_date FROM daily LIMIT 1";
+  $sheet_query = mysqli_query($connection, $query);
 
-$deletion = "DELETE FROM daily";
-$deletion_command = mysqli_query($connection, $deletion);
+  while ($row = mysqli_fetch_assoc($sheet_query)) {
+    $current_sheet_date = $row['sheet_date'];
 
-//Then fill the table with 3 new worksheet rows. Make sure they are not Xmas or Halloween worksheets. Later we can make a variable that checks if the date is NEAR Xmas or Halloween and then expressly include them.
+    //And today's date
+    $date = date("Y-m-d");
+  }
+
+  //If there is a date in the table and it is not today...
+  if ($current_sheet_date !== $date) {
+
+    //Empty the table 
+
+    $deletion = "DELETE FROM daily";
+    $deletion_command = mysqli_query($connection, $deletion);
+
+    //Then fill the table with 3 new worksheet rows. Make sure they are not Xmas or Halloween worksheets. Later we can make a variable that checks if the date is NEAR Xmas or Halloween and then expressly include them.
 
     $query2 = "SELECT * FROM worksheets WHERE NOT (sheet_tags LIKE '%Christmas%' or sheet_tags LIKE '%Halloween%') ORDER BY RAND() LIMIT 3  ";
     $select_random_sheets = mysqli_query($connection, $query2);
@@ -47,70 +61,19 @@ $deletion_command = mysqli_query($connection, $deletion);
 
       $query .= "VALUES('{$sheet_id}', '{$sheet_title}', '{$sheet_description}', '{$sheet_tags}', '{$sheet_type}', '{$sheet_url}', '{$sheet_date}', '{$sheet_image}') ";
 
-    $create_post_query = mysqli_query($connection, $query);
+      $create_post_query = mysqli_query($connection, $query);
 
-//Get a message if it didn't work
+      //Get a message if it didn't work
 
-    if (!$create_post_query) {
-      die('Query FAILED. This rather sucks!' . mysqli_error($connection));
-    } 
-};
+      if (!$create_post_query) {
+        die('Query FAILED. This rather sucks!' . mysqli_error($connection));
+      }
+    }
+  };
 
-//Select the three worksheet rows and stick em in the DOM
+  //Select first worksheet rows, make it active and stick it in the DOM, then do the two non-active ones.
 
-$query = "SELECT * FROM daily ";
-$select_sheets = mysqli_query($connection, $query);
-
-while ($row = mysqli_fetch_assoc($select_sheets)) {
-    $sheet_id = $row['id'];
-    $sheet_title = $row['sheet_title'];
-    $sheet_description = $row['sheet_description'];
-    $sheet_tags = $row['sheet_tags'];
-    $sheet_type = $row['sheet_type'];
-    $sheet_url = $row['sheet_url'];
-    $sheet_date = $row['sheet_date'];
-    $sheet_image = $row['sheet_image'];
-    $sorter = substr($sheet_url, -3);
-
-    echo "<div class='content-long'>
-       <h1 class='content-long_title'>Today's Choices...</h1>
-  <figure class='content-long__img'>";
-
-  //Choose to make a link to download or open web location depending on resource last 3 letters.
-switch ($sorter) {
-  case 'tml':
-    echo
-            "<a href='https://esl-ology.com/$sheet_url'>
-            <img src='img/$sheet_image' alt='$sheet_title'></a>";
-    break;
-
-case 'ebp':
-      echo
-      "<a href='https://esl-ology.com/$sheet_url'>
-      <img src='img/$sheet_image' alt='$sheet_title'></a>";
-      break;
-
-  default:
-    echo "<a href='docs/$sheet_url'>
-          <img src='img/$sheet_image' alt='$sheet_title'></a>";
- };
-
-    // <a href='$sheet_url'><img src='./img/$sheet_image' alt='$sheet_title'/></a>
-
-    echo "</figure>
-    <div class='content-long__text'>
-      <h2 class='content-title'>$sheet_title</h2>
-      <p>$sheet_description</p>
-    </div>
-  </div>";
-
-
-
-}
-
-//If today is the same date as on the sheet, no changes needed, just select the three rows and stick em in the DOM
-} else {
-  $query = "SELECT * FROM daily ";
+  $query = "SELECT * FROM daily LIMIT 1,1";
   $select_sheets = mysqli_query($connection, $query);
 
   while ($row = mysqli_fetch_assoc($select_sheets)) {
@@ -124,36 +87,81 @@ case 'ebp':
     $sheet_image = $row['sheet_image'];
     $sorter = substr($sheet_url, -3);
 
-    echo "<div class='content-long'>
-       <h1 class='content-long_title'>Today's Choices...</h1>
-  <figure class='content-long__img'>";
 
-    //Choose download or open web location depending on resource last 3 letters.
+    echo
+    " <div class='carousel-item active'>
+                <div class='bim'>";
+
     switch ($sorter) {
       case 'tml':
         echo
         "<a href='https://esl-ology.com/$sheet_url'>
-            <img src='img/$sheet_image' alt='$sheet_title'></a>";
+            <img src='img/$sheet_image' class='d-block w-100' alt='$sheet_title'></a>";
         break;
 
       case 'ebp':
         echo
         "<a href='https://esl-ology.com/$sheet_url'>
-      <img src='img/$sheet_image' alt='$sheet_title'></a>";
+      <img src='img/$sheet_image' class='d-block w-100'alt='$sheet_title'></a>";
         break;
 
       default:
         echo "<a href='docs/$sheet_url'>
-          <img src='img/$sheet_image' alt='$sheet_title'></a>";
+          <img src='img/$sheet_image' class='d-block w-100' alt='$sheet_title'></a>";
     };
 
-    // <a href='$sheet_url'><img src='./img/$sheet_image' alt='$sheet_title'/></a>
 
-    echo "</figure>
-    <div class='content-long__text'>
-      <h2 class='content-title'>$sheet_title</h2>
-      <p>$sheet_description</p>
-    </div>
-  </div>";
+    echo "</div>
+                <h2 class='bimtitle'>Today: $sheet_title</h2>
+               
+            </div>";
   }
-}
+  $query = "SELECT * FROM daily LIMIT 2, 1";
+  $select_sheets = mysqli_query($connection, $query);
+
+  while ($row = mysqli_fetch_assoc($select_sheets)) {
+    $sheet_id = $row['id'];
+    $sheet_title = $row['sheet_title'];
+    $sheet_description = $row['sheet_description'];
+    $sheet_tags = $row['sheet_tags'];
+    $sheet_type = $row['sheet_type'];
+    $sheet_url = $row['sheet_url'];
+    $sheet_date = $row['sheet_date'];
+    $sheet_image = $row['sheet_image'];
+    $sorter = substr($sheet_url, -3);
+
+
+    echo
+    "<div class='carousel-item '>
+                <div class='bim'>";
+
+    switch ($sorter) {
+      case 'tml':
+        echo
+        "<a href='https://esl-ology.com/$sheet_url'>
+            <img src='img/$sheet_image' class='d-block w-100' alt='$sheet_title'></a>";
+        break;
+
+      case 'ebp':
+        echo
+        "<a href='https://esl-ology.com/$sheet_url'>
+      <img src='img/$sheet_image' class='d-block w-100'alt='$sheet_title'></a>";
+        break;
+
+      default:
+        echo "<a href='docs/$sheet_url'>
+          <img src='img/$sheet_image' class='d-block w-100' alt='$sheet_title'></a>";
+    };
+
+
+    echo "</div>
+                <h2 class='bimtitle'>Today: $sheet_title</h2>
+                
+            </div>";
+  }
+  ?>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

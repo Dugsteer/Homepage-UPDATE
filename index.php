@@ -15,20 +15,20 @@ include "./includes/navbar.php" ?>
 
 <div id="wrapper" class="wrapper">
 
-  <div class="gridfiller"></div>
+    <div class="gridfiller"></div>
 
-  <?php include "./includes/narrow-ad-top.php" ?>
+    <?php include "./includes/narrow-ad-top.php" ?>
 
-  <div class="sidebar-container" id="sidebar">
-    <?php include "./sidebar.html" ?>
-  </div>
-
-
-  <div class="content">
+    <div class="sidebar-container" id="sidebar">
+        <?php include "./sidebar.html" ?>
+    </div>
 
 
+    <div class="content">
 
-    <?php
+
+
+        <?php
     $title = "ESL-Ology.com<br>TOOLS FOR TEFL";
     $imgsrc = "london.webp";
     $text = '<p style="font-size: 1.8rem; line-height:2.4rem; color:white; text-align:center">Here you can find free tools for English lessons that can be used online and in the classroom. Esl-ology.com offers flashcards, memory games, hangman, grammar mazes and  more, all designed to help your classes. More material will be added regularly, so please check back to see what new tools for TEFL are available.</p>';
@@ -38,15 +38,21 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-intro.php";
     ?>
 
-    <div class="content-rand" id="randoms">
-      <?php
-      include "./homepage-includes/include_rand_daily.php";
-      ?>
-    </div>
+        <div class="content-short" id="randoms">
+            <div id='carouselExampleSlidesOnly' class='carousel slide' data-bs-ride='carousel'>
+                <div class='carousel-inner'>
+                    <?php
+
+          include "./homepage-includes/include_rand_daily.php";
+          // include "./includes/bootstrap.php";
+          ?>
+                </div>
+            </div>
+        </div>
 
 
 
-    <?php
+        <?php
     $title = "Grammar Mazes";
     $imgsrc = "GrammarMaze.webp";
     $href = "topic_page.php?&type=grammar+maze";
@@ -59,7 +65,7 @@ include "./includes/navbar.php" ?>
 
 
 
-    <?php
+        <?php
     $title = "Go Fish Cards";
     $imgsrc = "JobsGoFish.webp";
     $href = "topic_page.php?type=Go+fish";
@@ -70,7 +76,7 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-tall.php";
     ?>
 
-    <?php
+        <?php
     $title = "Bingo Cards";
     $imgsrc = "DailyRoutineBingo.webp";
     $href = "topic_page.php?type=bingo";
@@ -81,7 +87,7 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-tall.php";
     ?>
 
-    <?php
+        <?php
     $title = "Play Any Boardgame";
     $imgsrc = "JobBoardGame.webp";
     $href = "boardgame-player.php";
@@ -91,7 +97,7 @@ include "./includes/navbar.php" ?>
     $icon = "online";
     include "./includes/content-box/content-box-tall.php" ?>
 
-    <?php
+        <?php
     $title = "Photo Flashcards";
     $imgsrc = "AnimalFlash.webp";
     $href = "topic_page.php?&type=flashcards";
@@ -100,7 +106,7 @@ include "./includes/navbar.php" ?>
     $icon = "online";
     include "./includes/content-box/content-box-short.php" ?>
 
-    <?php
+        <?php
     $title = "Memory Games";
     $imgsrc = "SportMemory.webp";
     $href = "topic_page.php?&type=memory+game";
@@ -111,7 +117,7 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-short.php";
     ?>
 
-    <?php
+        <?php
     $title = "Text Mazes";
     $imgsrc = "FrequencyAdjectivewTextMaze.webp";
     $href = "topic_page.php?type=text+maze";
@@ -121,7 +127,7 @@ include "./includes/navbar.php" ?>
     $icon = "download";
     include "./includes/content-box/content-box-tall.php" ?>
 
-    <?php
+        <?php
     $title = "Printable Dominoes";
     $imgsrc = "SportsDominoes.webp";
     $href = "topic_page.php?type=dominoes";
@@ -130,7 +136,7 @@ include "./includes/navbar.php" ?>
     $icon = "download";
     include "./includes/content-box/content-box-tall.php" ?>
 
-    <?php
+        <?php
     $title = "73 Questions";
     $imgsrc = "73questions.webp";
     $href = "esl-speaking-questions.html";
@@ -141,7 +147,7 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-short.php" ?>
 
 
-    <?php
+        <?php
     $title = "Christmas Tree Game";
     $imgsrc = "christmas-tree-game.webp";
     $style = "width: 260px;";
@@ -152,16 +158,17 @@ include "./includes/navbar.php" ?>
     $icon = "online";
     include "./includes/content-box/content-box-short-square.php";
     ?>
-  </div>
+    </div>
 
-  <div class="sense-bottom">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Vertical ad -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6192312197226967" data-ad-slot="3073690633" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+    <div class="sense-bottom">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Vertical ad -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6192312197226967"
+            data-ad-slot="3073690633" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
 
 
