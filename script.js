@@ -2,11 +2,11 @@ const menu = document.getElementById("menu");
 const sidey = document.getElementById("sidebar");
 const blue = window.matchMedia("(max-width: 800px)");
 
-// const randoms = document.getElementById("randoms").querySelectorAll('h1');
+// const randoms = document.getElementsByClassName("rando");
 
-//     randoms[0].parentNode.style.display = "flex";
-//     randoms[1].parentNode.style.display = "none";
-//     randoms[2].parentNode.style.display = "none";
+//     randoms[0].style.display = "flex";
+//     randoms[1].style.display = "none";
+//     randoms[2].style.display = "none";
 
 
 //   setInterval(revolveRandoms, 3000);
@@ -14,12 +14,12 @@ const blue = window.matchMedia("(max-width: 800px)");
 
 
 //   function revolveRandoms(){
-//  if (randoms[0].parentNode.style.display === "flex" && randoms[1].parentNode.style.display === "none"  && randoms[2].parentNode.style.display === "none") {
-// randoms[0].parentNode.style.display = "none"; randoms[1].parentNode.style.display = "flex"; randoms[2].parentNode.style.display = "none";
-//  } else if (randoms[0].parentNode.style.display === "none" && randoms[1].parentNode.style.display === "flex"  && randoms[2].parentNode.style.display === "none") {
-// randoms[0].parentNode.style.display = "none"; randoms[1].parentNode.style.display = "none"; randoms[2].parentNode.style.display = "flex"; 
-//  } else if (randoms[0].parentNode.style.display === "none" && randoms[1].parentNode.style.display === "none"  && randoms[2].parentNode.style.display === "flex"){
-//    randoms[0].parentNode.style.display = "flex"; randoms[1].parentNode.style.display = "none"; randoms[2].parentNode.style.display = "none"; 
+//  if (randoms[0].style.display === "flex" && randoms[1].style.display === "none"  && randoms[2].style.display === "none") {
+// randoms[0].style.display = "none"; randoms[1].style.display = "flex"; randoms[2].style.display = "none";
+//  } else if (randoms[0].style.display === "none" && randoms[1].style.display === "flex"  && randoms[2].style.display === "none") {
+// randoms[0].style.display = "none"; randoms[1].style.display = "none"; randoms[2].style.display = "flex"; 
+//  } else if (randoms[0].style.display === "none" && randoms[1].style.display === "none"  && randoms[2].style.display === "flex"){
+//    randoms[0].style.display = "flex"; randoms[1].style.display = "none"; randoms[2].style.display = "none"; 
 //  }
  
 //   }

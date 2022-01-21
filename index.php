@@ -38,17 +38,10 @@ include "./includes/navbar.php" ?>
     include "./includes/content-box/content-box-intro.php";
     ?>
 
-        <div class="content-short" id="randoms">
-            <div id='carouselExampleSlidesOnly' class='carousel slide' data-bs-ride='carousel'>
-                <div class='carousel-inner'>
-                    <?php
 
-          include "./homepage-includes/include_rand_daily.php";
-          // include "./includes/bootstrap.php";
-          ?>
-                </div>
-            </div>
-        </div>
+
+        <?php include "./homepage-includes/include_rand_daily.php";          ?>
+
 
 
 

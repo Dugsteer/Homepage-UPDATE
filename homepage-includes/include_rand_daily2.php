@@ -58,7 +58,7 @@ $deletion_command = mysqli_query($connection, $deletion);
 
 //Select the three worksheet rows and stick em in the DOM
 
-$query = "SELECT * FROM daily ";
+$query = "SELECT * FROM daily LIMIT 1";
 $select_sheets = mysqli_query($connection, $query);
 
 while ($row = mysqli_fetch_assoc($select_sheets)) {
@@ -110,7 +110,7 @@ case 'ebp':
 
 //If today is the same date as on the sheet, no changes needed, just select the three rows and stick em in the DOM
 } else {
-  $query = "SELECT * FROM daily ";
+  $query = "SELECT * FROM daily LIMIT 1";
   $select_sheets = mysqli_query($connection, $query);
 
   while ($row = mysqli_fetch_assoc($select_sheets)) {

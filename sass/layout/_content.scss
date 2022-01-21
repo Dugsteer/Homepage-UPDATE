@@ -187,7 +187,7 @@
 
 .content-long img,
 .content-short img {
-  width: 320px;
+  width: 300px;
 
   @media only screen and (max-width: $bp-large) {
     width: 300px;
@@ -226,57 +226,3 @@
   background: transparent;
 }
 
-.content-rand {
-  display: flex;
-  grid-row: span 9;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-radius: 15px;
-  background-color: transparent;
-  width: 430px;
-
-  height: 680px;
-
-  @media only screen and (max-width: $bp-largest) {
-    width: 380px;
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    width: 380px;
-    align-content: center;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    grid-template-columns: 1fr;
-    width: 310px;
-    text-align: center;
-  }
-}
-
-.bim{
-  display:flex;
-  align-items:flex-start;
-  width: fit-content;
-    object-fit: cover;
-    height: fit-content;
-    padding:none;
-    margin:none;
-}
-
-.bim img{
-  top:30px;
-}
-
-#randoms {
-  background-color:$color-light-grey;
-}
-
- .bimtitle {
-    color: $color-blue;
-    margin-top: 2rem;
-    text-align:center;
-  }
